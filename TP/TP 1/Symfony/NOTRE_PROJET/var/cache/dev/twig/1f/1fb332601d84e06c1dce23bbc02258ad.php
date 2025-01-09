@@ -233,7 +233,6 @@ class __TwigTemplate_e022f6499e0e752e978f308b241b7006 extends Template
   <p>&copy; 2025 Hugo Sanchez Durante. Portfolio réalisé dans le cadre de la SAE 1.04 - BUT Réseaux et Télécommunications</p>
 </footer>
 
-
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -392,7 +391,6 @@ class __TwigTemplate_e022f6499e0e752e978f308b241b7006 extends Template
 <footer class=\"bg-dark text-white text-center py-4 mt-5\">
   <p>&copy; 2025 Hugo Sanchez Durante. Portfolio réalisé dans le cadre de la SAE 1.04 - BUT Réseaux et Télécommunications</p>
 </footer>
-
 
 {% endblock %}
 ", "page/portfolio.html.twig", "C:\\Users\\Utilisateur\\Desktop\\Cours\\S1 RT1 2024_2025\\Cours_TD_TP\\R1.09 Introduction aux technologies Web\\TP\\TP 1\\Symfony\\NOTRE_PROJET\\templates\\page\\portfolio.html.twig");

@@ -98,14 +98,6 @@ class __TwigTemplate_9802fdbde13b428909822236c81e6d84 extends Template
 
         // line 6
         yield "<style>
-  body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-        }
-
         .container {
             width: 80%;
             margin: auto;
@@ -348,11 +340,11 @@ class __TwigTemplate_9802fdbde13b428909822236c81e6d84 extends Template
 <nav class=\"navbar navbar-expand-lg bg-dark\" data-bs-theme=\"dark\">
   <div class=\"container-fluid\">
     <a class=\"navbar-brand\" href=\"";
-        // line 256
+        // line 248
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page1");
         yield "\">
       <img src=\"";
-        // line 257
+        // line 249
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/logo.png"), "html", null, true);
         yield "\" alt=\"Description de l'image\" width=\"120px\" height=\"80px\">
     </a>
@@ -363,25 +355,25 @@ class __TwigTemplate_9802fdbde13b428909822236c81e6d84 extends Template
       <ul class=\"navbar-nav me-auto\">
         <li class=\"nav-item\">
           <a class=\"nav-link\" href=\"";
-        // line 265
+        // line 257
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page1");
         yield "\">Accueil</a>
         </li>
         <li class=\"nav-item\">
           <a class=\"nav-link active\" href=\"";
-        // line 268
+        // line 260
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page2");
         yield "\">Présentation</a>
         </li>
         <li class=\"nav-item\">
           <a class=\"nav-link\" href=\"";
-        // line 271
+        // line 263
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page3");
         yield "\">Portfolio</a>
         </li>
         <li class=\"nav-item\">
           <a class=\"nav-link\" href=\"";
-        // line 274
+        // line 266
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page4");
         yield "\">Contact</a>
         </li>
@@ -409,7 +401,7 @@ class __TwigTemplate_9802fdbde13b428909822236c81e6d84 extends Template
         <div class=\"timeline-item top\">
             <div class=\"timeline-point\">
                 <div class=\"timeline-text\">
-                    Actuellement en formation au sein de l'Université de [Nom de ton Université], je me spécialise dans les réseaux et les télécommunications.
+                    Actuellement en formation au sein de l'Université de Jean Monnet a Roanne, je me spécialise dans les réseaux et les télécommunications.
                 </div>
             </div>
             <h3>2024 - En cours : BUT Réseaux et Télécommunications</h3>
@@ -417,7 +409,7 @@ class __TwigTemplate_9802fdbde13b428909822236c81e6d84 extends Template
         <div class=\"timeline-item bottom\">
             <div class=\"timeline-point\">
                 <div class=\"timeline-text\">
-                    Après avoir obtenu mon baccalauréat scientifique, j'ai décidé de poursuivre mes études en informatique.
+                  Au lycée, j'ai fait un bac technologique STI2D. Dans ma dernière année, dans le cadre de mon projet de fin d'année, j'ai participé à la compétition First Tech Challenge France
                 </div>
             </div>
             <h3>2024 - 2019 : Baccalauréat technologique </h3>
@@ -425,7 +417,7 @@ class __TwigTemplate_9802fdbde13b428909822236c81e6d84 extends Template
         <div class=\"timeline-item top\">
             <div class=\"timeline-point\">
                 <div class=\"timeline-text\">
-                    J'ai obtenu mon baccalauréat avec mention, spécialisé en mathématiques et sciences de l'ingénieur.
+                    Au collège j'ai pendant 2 ans fait le club journal ou j'ai rédigé quelque articles, ainsi que dans le cadre purement scolaire j'ai fait l'option latin pendant 3 ans
                 </div>
             </div>
             <h3>2019 - 2014: Collège Jean Ferrat</h3>
@@ -455,7 +447,6 @@ class __TwigTemplate_9802fdbde13b428909822236c81e6d84 extends Template
     <p>&copy; 2025 Hugo Sanchez Durante. Portfolio réalisé dans le cadre de la SAE 1.04 - BUT Réseaux et Télécommunications</p>
   </footer>
   
-
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -487,7 +478,7 @@ class __TwigTemplate_9802fdbde13b428909822236c81e6d84 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  385 => 274,  379 => 271,  373 => 268,  367 => 265,  356 => 257,  352 => 256,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
+        return array (  377 => 266,  371 => 263,  365 => 260,  359 => 257,  348 => 249,  344 => 248,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -498,14 +489,6 @@ class __TwigTemplate_9802fdbde13b428909822236c81e6d84 extends Template
 
 {% block body %}
 <style>
-  body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-        }
-
         .container {
             width: 80%;
             margin: auto;
@@ -791,7 +774,7 @@ class __TwigTemplate_9802fdbde13b428909822236c81e6d84 extends Template
         <div class=\"timeline-item top\">
             <div class=\"timeline-point\">
                 <div class=\"timeline-text\">
-                    Actuellement en formation au sein de l'Université de [Nom de ton Université], je me spécialise dans les réseaux et les télécommunications.
+                    Actuellement en formation au sein de l'Université de Jean Monnet a Roanne, je me spécialise dans les réseaux et les télécommunications.
                 </div>
             </div>
             <h3>2024 - En cours : BUT Réseaux et Télécommunications</h3>
@@ -799,7 +782,7 @@ class __TwigTemplate_9802fdbde13b428909822236c81e6d84 extends Template
         <div class=\"timeline-item bottom\">
             <div class=\"timeline-point\">
                 <div class=\"timeline-text\">
-                    Après avoir obtenu mon baccalauréat scientifique, j'ai décidé de poursuivre mes études en informatique.
+                  Au lycée, j'ai fait un bac technologique STI2D. Dans ma dernière année, dans le cadre de mon projet de fin d'année, j'ai participé à la compétition First Tech Challenge France
                 </div>
             </div>
             <h3>2024 - 2019 : Baccalauréat technologique </h3>
@@ -807,7 +790,7 @@ class __TwigTemplate_9802fdbde13b428909822236c81e6d84 extends Template
         <div class=\"timeline-item top\">
             <div class=\"timeline-point\">
                 <div class=\"timeline-text\">
-                    J'ai obtenu mon baccalauréat avec mention, spécialisé en mathématiques et sciences de l'ingénieur.
+                    Au collège j'ai pendant 2 ans fait le club journal ou j'ai rédigé quelque articles, ainsi que dans le cadre purement scolaire j'ai fait l'option latin pendant 3 ans
                 </div>
             </div>
             <h3>2019 - 2014: Collège Jean Ferrat</h3>
@@ -837,7 +820,6 @@ class __TwigTemplate_9802fdbde13b428909822236c81e6d84 extends Template
     <p>&copy; 2025 Hugo Sanchez Durante. Portfolio réalisé dans le cadre de la SAE 1.04 - BUT Réseaux et Télécommunications</p>
   </footer>
   
-
 {% endblock %}
 ", "page/présentation.html.twig", "C:\\Users\\Utilisateur\\Desktop\\Cours\\S1 RT1 2024_2025\\Cours_TD_TP\\R1.09 Introduction aux technologies Web\\TP\\TP 1\\Symfony\\NOTRE_PROJET\\templates\\page\\présentation.html.twig");
     }

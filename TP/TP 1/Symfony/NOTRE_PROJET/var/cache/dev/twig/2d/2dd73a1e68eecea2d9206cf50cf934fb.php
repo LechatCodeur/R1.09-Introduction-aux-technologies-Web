@@ -64,21 +64,22 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         // line 8
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("Style/bootstrap.min.css"), "html", null, true);
         yield "\">
+
         ";
-        // line 9
+        // line 10
         yield from $this->unwrap()->yieldBlock('stylesheets', $context, $blocks);
-        // line 11
+        // line 13
         yield "
         ";
-        // line 12
+        // line 14
         yield from $this->unwrap()->yieldBlock('javascripts', $context, $blocks);
-        // line 15
+        // line 17
         yield "    </head>
     <body>
         ";
-        // line 17
+        // line 19
         yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
-        // line 18
+        // line 20
         yield "    </body>
 </html>
 ";
@@ -114,7 +115,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 9
+    // line 10
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -127,8 +128,9 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 10
-        yield "        ";
+        // line 11
+        yield "        
+        ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -138,7 +140,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 12
+    // line 14
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -151,10 +153,10 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 13
+        // line 15
         yield "            ";
         yield from $this->unwrap()->yieldBlock('importmap', $context, $blocks);
-        // line 14
+        // line 16
         yield "        ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -165,7 +167,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 13
+    // line 15
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -188,7 +190,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 17
+    // line 19
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -231,7 +233,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  192 => 17,  169 => 13,  158 => 14,  155 => 13,  142 => 12,  131 => 10,  118 => 9,  95 => 7,  82 => 18,  80 => 17,  76 => 15,  74 => 12,  71 => 11,  69 => 9,  65 => 8,  61 => 7,  53 => 1,);
+        return array (  194 => 19,  171 => 15,  160 => 16,  157 => 15,  144 => 14,  132 => 11,  119 => 10,  96 => 7,  83 => 20,  81 => 19,  77 => 17,  75 => 14,  72 => 13,  70 => 10,  65 => 8,  61 => 7,  53 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -244,7 +246,9 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         <meta charset=\"UTF-8\">
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel=\"stylesheet\" href=\"{{ asset('Style/bootstrap.min.css') }}\">
+
         {% block stylesheets %}
+        
         {% endblock %}
 
         {% block javascripts %}

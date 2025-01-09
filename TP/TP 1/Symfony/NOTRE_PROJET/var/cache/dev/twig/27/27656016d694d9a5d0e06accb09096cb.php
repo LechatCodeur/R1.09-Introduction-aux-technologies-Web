@@ -133,10 +133,7 @@ class __TwigTemplate_79bb1dec90c6d4ffa3f507bab595d58a extends Template
 </style>
 <nav class=\"navbar navbar-expand-lg bg-dark\" data-bs-theme=\"dark\">
     <div class=\"container-fluid\">
-      <a class=\"navbar-brand\" href=\"";
-        // line 42
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page1");
-        yield "\">
+      <a class=\"navbar-brand\" href=\"https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=PL_Ff_SxSlLITTcsrGMjgRlWYkIkrXoAGS&index=21&ab_channel=RickAstley\">
         <img src=\"";
         // line 43
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/logo.png"), "html", null, true);
@@ -230,7 +227,7 @@ class __TwigTemplate_79bb1dec90c6d4ffa3f507bab595d58a extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  171 => 60,  165 => 57,  159 => 54,  153 => 51,  142 => 43,  138 => 42,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
+        return array (  168 => 60,  162 => 57,  156 => 54,  150 => 51,  139 => 43,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -276,7 +273,7 @@ class __TwigTemplate_79bb1dec90c6d4ffa3f507bab595d58a extends Template
 </style>
 <nav class=\"navbar navbar-expand-lg bg-dark\" data-bs-theme=\"dark\">
     <div class=\"container-fluid\">
-      <a class=\"navbar-brand\" href=\"{{ path('app_page1') }}\">
+      <a class=\"navbar-brand\" href=\"https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=PL_Ff_SxSlLITTcsrGMjgRlWYkIkrXoAGS&index=21&ab_channel=RickAstley\">
         <img src=\"{{ asset('images/logo.png') }}\" alt=\"Description de l'image\" width=\"120px\" height=\"80px\">
       </a>
       <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarColor02\" aria-controls=\"navbarColor02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
