@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Le Jeux/Les Lieux Important</title>
+  <link href="../CSS/style.css" rel="stylesheet" type="text/css">
+  <script>
+    function afficherHeure() {
+      const date = new Date();
+      let heures = date.getHours();
+      let minutes = date.getMinutes();
+      let secondes = date.getSeconds();
+      heures = heures < 10 ? '0' + heures : heures;
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      secondes = secondes < 10 ? '0' + secondes : secondes;
+      const heureActuelle = heures + ':' + minutes + ':' + secondes;
+      document.getElementById('heure').innerText = heureActuelle;
+    }
+    setInterval(afficherHeure, 1000);
+  </script>
+</head>
+
+  <div class="Labarre">
+    <a href="Jeux.html">Le Jeux/Les Lieux Important</a>
+    <a href="Metier.html">Les Compétances</a>
+    <a href="Personage.html">Les Personnages important</a>
+    <span id="heure"></span> 
+    <form action="#" method="post">
+      <label for="nom">Nom:</label>
+      <input type="text" id="nom" name="nom" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+  
+      <button type="submit">Envoyer</button>
+  </form>
+  </div>
+  <br>
+  <div class="Case">
+    <h1>Le Jeu</h1>
+    <img src="../Image/stardew1.jpg" alt="Stardew">
+    <div class="text">
+      <p>
+        But du jeux:<br>        
+        -Faire de l'argent<br>
+        -Organiser sa ferme<br>
+        -Découvrir PelicanTown et ses habitants<br> 
+      </p>
+    </div>
+    <h2>Le 26/02/2016</h2>
+  </div>
+
+  <div class="Case">
+    <h1>La Ferme</h1>
+    <img src="../Image/stardew2.jpg" alt="Ferme">
+    <div class="text">
+      <p>Notre lieu de vie et de travail on nous allons cultiver des champs,élever des animaux ,décorer comme bon nous le semble</p>
+    </div>
+    <h2>Le 30/02/2016</h2>
+  </div>
+
+  <div class="Case">
+    <h1>La Mine</h1>
+    <img src="../Image/stardew3.jpg" alt="Mine">
+    <div class="text">
+      <p>Un endroit rempli de richesse des minerais,des pierre précieuse ainsi que de nombre danger </p>
+    </div>
+    <h2>Le 31/02/2016</h2>
+  </div>
+
+  <div class="Case">
+    <h1>Pelican Town</h1>
+    <img src="../Image/stardew4.jpg" alt="Pelican Town">
+    <div class="text">
+      <p>Le lieu de vie des villageois un endroit regorgeant de mystère et d'intèraction</p>
+    </div>
+    <h2>Le 05/03/2016</h2>
+  </div>
+  <div class="Case">
+    <h1>Desert</h1>
+    <img src="../Image/desert.jpg" alt="Pelican Town">
+    <div class="text">
+      <p>Le desert un endroit dangereux ou l'on peut acquérir de grande richesse mais il ne faut pas être trop avare</p>
+    </div>
+    <h2>Le 08/03/2016</h2>
+  </div>
+
+  <div class="Case">
+    <h1>île gingembre</h1>
+    <img src="../Image/île.jpg" alt="Pelican Town">
+    <div class="text">
+      <p>Une île paradisiaque ou règne un été eternel et ou l'on peut visiter le volcan</p>
+    </div>
+    <h2>Le 15/03/2016</h2>
+  </div>
+  <h>hugo sanchez durante 2024</h>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Les Personnages</title>
+  <link href="../CSS/style.css" rel="stylesheet" type="text/css">
+  <script>
+    function afficherHeure() {
+      const date = new Date();
+      let heures = date.getHours();
+      let minutes = date.getMinutes();
+      let secondes = date.getSeconds();
+      heures = heures < 10 ? '0' + heures : heures;
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      secondes = secondes < 10 ? '0' + secondes : secondes;
+      const heureActuelle = heures + ':' + minutes + ':' + secondes;
+      document.getElementById('heure').innerText = heureActuelle;
+    }
+    setInterval(afficherHeure, 1000);
+  </script>
+</head>
+
+<body>
+
+  <div class="Labarre">
+    <a href="Jeux.html">Le Jeux/Les Lieux Important</a>
+    <a href="Metier.html">Les Compétances</a>
+    <a href="Personage.html">Les Personnages important</a>
+    <span id="heure"></span>
+    <form action="#" method="post">
+      <label for="nom">Nom:</label>
+      <input type="text" id="nom" name="nom" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+  
+      <button type="submit">Envoyer</button>
+  </form>
+  </div>
+  <br>
+  <div class="Case">
+    <h1>Gunther</h1>
+    <img src="../Image/Gunther.jpg" alt="Jeu Stardew Valley">
+    <div class="text">
+      <p>
+        But du jeux:
+        <br>-Faire de l'argent
+        <br>-Réparer le centre communautaire
+        <br>-Faire le 100%
+      </p>
+    </div>
+    <h2>Le 26/02/2016</h2>
+  </div>
+
+  <div class="Case">
+    <h1>Pierre</h1>
+    <img src="../Image/Pierre.jpg" alt="Ferme Stardew Valley">
+    <div class="text">
+      <p>Stardew Valley</p>
+    </div>
+    <h2>Le 27/02/2016</h2>
+  </div>
+
+  <div class="Case">
+    <h1>Clint</h1>
+    <img src="../Image/Clint.jpg" alt="Mine Stardew Valley">
+    <div class="text">
+      <p>Stardew Valley</p>
+    </div>
+    <h2>Le 28/02/2016</h2>
+  </div>
+
+  <div class="Case">
+    <h1>Robin</h1>
+    <img src="../Image/Robin.jpg" alt="Jeu Stardew Valley">
+    <div class="text">
+      <p>Stardew Valley</p>
+    </div>
+    <h2>Le 29/02/2016</h2>
+  </div>
+  <h>hugo sanchez durante 2024</h>
+</body>
+</html>

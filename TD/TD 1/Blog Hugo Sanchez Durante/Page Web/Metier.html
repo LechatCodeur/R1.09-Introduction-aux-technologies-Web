@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Les Métiers/Compétance</title>
+  <link href="../CSS/style.css" rel="stylesheet" type="text/css">
+  <script>
+    function afficherHeure() {
+      const date = new Date();
+      let heures = date.getHours();
+      let minutes = date.getMinutes();
+      let secondes = date.getSeconds();
+      heures = heures < 10 ? '0' + heures : heures;
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      secondes = secondes < 10 ? '0' + secondes : secondes;
+      const heureActuelle = heures + ':' + minutes + ':' + secondes;
+      document.getElementById('heure').innerText = heureActuelle;
+    }
+    setInterval(afficherHeure, 1000);
+  </script>
+</head>
+
+<body>
+
+  <div class="Labarre">
+    <a href="Jeux.html">Le Jeux/Les Lieux Important</a>
+    <a href="Metier.html">Les Compétances</a>
+    <a href="Personage.html">Les Personnages important</a>
+    <span id="heure"></span>
+    <form action="#" method="post">
+      <label for="nom">Nom:</label>
+      <input type="text" id="nom" name="nom" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+  
+      <button type="submit">Envoyer</button>
+  </form> 
+  </div>
+  <br>
+  <div class="Case">
+    <h1>Introduction aux compétances</h1>
+    <img src="../Image/Competance.jpg" alt="Jeu Stardew Valley">
+    <div class="text">
+      <p>Il existe 5 grande compétance qui nous permettent d'acquérir des bonus ou de nouvelle recette</p>
+    </div>
+    <h2>Le 26/02/2016</h2>
+  </div>
+  <div class="Case">
+    <h1>Agriculture</h1>
+    <img src="../Image/Agriculture.jpg" alt="Jeu Stardew Valley">
+    <div class="text">
+      <p>L'Agriculture essentielle en tant que fermier pour monter cette dernière nous pouvons cultiver une grande divérsité de légumes,fruits et d'animaux a élever</p>
+    </div>
+    <h2>Le 26/02/2016</h2>
+  </div>
+
+  <div class="Case">
+    <h1>Extraction minière</h1>
+    <img src="../Image/Mineur.jpeg" alt="Ferme Stardew Valley">
+    <div class="text">
+      <p>Dans Stardew Valley il existe deux mines ou l'ont peut acquérir des minerais pour améliorer nos outils</p>
+    </div>
+    <h2>Le 26/02/2016</h2>
+  </div>
+
+  <div class="Case">
+    <h1>Cueillette</h1>
+    <img src="../Image/Cuiellette.jpg" alt="Mine Stardew Valley">
+    <div class="text">
+      <p>La Cueillette est assez plaisante a monter il faut ce balader couper des arbres,récolter des baies</p>
+    </div>
+    <h2>Le 26/02/2016</h2>
+  </div>
+
+  <div class="Case">
+    <h1>Pêche</h1>
+    <img src="../Image/Peche.jpg" alt="Jeu Stardew Valley">
+    <div class="text">
+      <p>Ah la péche une activité qui peut s'avérer très lucrative en debut de partie qui alie fun et patience</p>
+    </div>
+    <h2>Le 26/02/2016</h2>
+  </div>
+  <div class="Case">
+    <h1>Combat</h1>
+    <img src="../Image/Combat.jpg" alt="Jeu Stardew Valley">
+    <div class="text">
+      <p>BAH LA BASTOON AHHHHHHHHHHHHHHHHHHHHHHHAHAAHAAAAAAAAAAAAAAHAHAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</p>
+    </div>
+    <h2>Le 26/02/2016</h2>
+  </div>
+  <h>hugo sanchez durante 2024</h>
+</body>
+
+</html>
