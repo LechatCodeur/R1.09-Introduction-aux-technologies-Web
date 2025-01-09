@@ -73,7 +73,7 @@ class __TwigTemplate_ed62033ea818532e3dcae1268eec832f extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        yield "Page1!";
+        yield "Page2";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -100,50 +100,45 @@ class __TwigTemplate_ed62033ea818532e3dcae1268eec832f extends Template
         yield "<style>
   
 </style>
-
-<nav class=\"navbar navbar-expand-lg bg-primary\" data-bs-theme=\"dark\">
+<nav class=\"navbar navbar-expand-lg bg-dark\" data-bs-theme=\"dark\">
   <div class=\"container-fluid\">
-    <a class=\"navbar-brand\" href=\"#\">Navbar</a>
-    <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarColor01\" aria-controls=\"navbarColor01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+    <a class=\"navbar-brand\" href=\"";
+        // line 11
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page1");
+        yield "\">Accueil</a>
+    <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarColor02\" aria-controls=\"navbarColor02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
       <span class=\"navbar-toggler-icon\"></span>
     </button>
-    <div class=\"collapse navbar-collapse\" id=\"navbarColor01\">
+    <div class=\"collapse navbar-collapse\" id=\"navbarColor02\">
       <ul class=\"navbar-nav me-auto\">
         <li class=\"nav-item\">
-          <a class=\"nav-link active\" href=\"#\">Home
-            <span class=\"visually-hidden\">(current)</span>
-          </a>
+          <a class=\"nav-link\" href=\"";
+        // line 18
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page1");
+        yield "\">Page1</a>
         </li>
         <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"#\">Features</a>
+          <a class=\"nav-link active\" href=\"";
+        // line 21
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page2");
+        yield "\">Page2</a>
         </li>
         <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"#\">Pricing</a>
+          <a class=\"nav-link\" href=\"";
+        // line 24
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page3");
+        yield "\">Page3</a>
         </li>
         <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"#\">About</a>
-        </li>
-        <li class=\"nav-item dropdown\">
-          <a class=\"nav-link dropdown-toggle\" data-bs-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Dropdown</a>
-          <div class=\"dropdown-menu\">
-            <a class=\"dropdown-item\" href=\"#\">Action</a>
-            <a class=\"dropdown-item\" href=\"#\">Another action</a>
-            <a class=\"dropdown-item\" href=\"#\">Something else here</a>
-            <div class=\"dropdown-divider\"></div>
-            <a class=\"dropdown-item\" href=\"#\">Separated link</a>
-          </div>
+          <a class=\"nav-link\" href=\"";
+        // line 27
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page4");
+        yield "\">Page4</a>
         </li>
       </ul>
-      <form class=\"d-flex\">
-        <input class=\"form-control me-sm-2\" type=\"search\" placeholder=\"Search\">
-        <button class=\"btn btn-secondary my-2 my-sm-0\" type=\"submit\">Search</button>
-      </form>
     </div>
   </div>
 </nav>
- 
-
-
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -175,63 +170,43 @@ class __TwigTemplate_ed62033ea818532e3dcae1268eec832f extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
+        return array (  135 => 27,  129 => 24,  123 => 21,  117 => 18,  107 => 11,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
     }
 
     public function getSourceContext(): Source
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Page1!{% endblock %}
+{% block title %}Page2{% endblock %}
 
 {% block body %}
 <style>
   
 </style>
-
-<nav class=\"navbar navbar-expand-lg bg-primary\" data-bs-theme=\"dark\">
+<nav class=\"navbar navbar-expand-lg bg-dark\" data-bs-theme=\"dark\">
   <div class=\"container-fluid\">
-    <a class=\"navbar-brand\" href=\"#\">Navbar</a>
-    <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarColor01\" aria-controls=\"navbarColor01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+    <a class=\"navbar-brand\" href=\"{{ path('app_page1') }}\">Accueil</a>
+    <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarColor02\" aria-controls=\"navbarColor02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
       <span class=\"navbar-toggler-icon\"></span>
     </button>
-    <div class=\"collapse navbar-collapse\" id=\"navbarColor01\">
+    <div class=\"collapse navbar-collapse\" id=\"navbarColor02\">
       <ul class=\"navbar-nav me-auto\">
         <li class=\"nav-item\">
-          <a class=\"nav-link active\" href=\"#\">Home
-            <span class=\"visually-hidden\">(current)</span>
-          </a>
+          <a class=\"nav-link\" href=\"{{ path('app_page1') }}\">Page1</a>
         </li>
         <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"#\">Features</a>
+          <a class=\"nav-link active\" href=\"{{ path('app_page2') }}\">Page2</a>
         </li>
         <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"#\">Pricing</a>
+          <a class=\"nav-link\" href=\"{{ path('app_page3') }}\">Page3</a>
         </li>
         <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"#\">About</a>
-        </li>
-        <li class=\"nav-item dropdown\">
-          <a class=\"nav-link dropdown-toggle\" data-bs-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Dropdown</a>
-          <div class=\"dropdown-menu\">
-            <a class=\"dropdown-item\" href=\"#\">Action</a>
-            <a class=\"dropdown-item\" href=\"#\">Another action</a>
-            <a class=\"dropdown-item\" href=\"#\">Something else here</a>
-            <div class=\"dropdown-divider\"></div>
-            <a class=\"dropdown-item\" href=\"#\">Separated link</a>
-          </div>
+          <a class=\"nav-link\" href=\"{{ path('app_page4') }}\">Page4</a>
         </li>
       </ul>
-      <form class=\"d-flex\">
-        <input class=\"form-control me-sm-2\" type=\"search\" placeholder=\"Search\">
-        <button class=\"btn btn-secondary my-2 my-sm-0\" type=\"submit\">Search</button>
-      </form>
     </div>
   </div>
 </nav>
- 
-
-
 {% endblock %}
 ", "page/page2.html.twig", "C:\\Users\\Utilisateur\\Desktop\\Cours\\S1 RT1 2024_2025\\Cours_TD_TP\\R1.09 Introduction aux technologies Web\\TP\\TP 1\\Symfony\\NOTRE_PROJET\\templates\\page\\page2.html.twig");
     }
