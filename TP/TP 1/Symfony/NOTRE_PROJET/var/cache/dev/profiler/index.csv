@@ -258,3 +258,10 @@ cdef99,127.0.0.1,GET,http://127.0.0.1:8000/assets/styles/%7B%7B%20asset('images/
 8a7526,127.0.0.1,GET,http://127.0.0.1:8000/home2,1736406459,,200,request
 6604dc,127.0.0.1,GET,http://127.0.0.1:8000/assets/styles/%7B%7B%20asset('images/stardew1.jpeg')%20%7D%7D,1736406459,01afe4,404,request
 01afe4,127.0.0.1,GET,http://127.0.0.1:8000/assets/styles/%7B%7B%20asset('images/stardew1.jpeg')%20%7D%7D,1736406459,,404,request
+390a88,127.0.0.1,GET,http://127.0.0.1:8000/page/home,1736408730,894f02,404,request
+894f02,127.0.0.1,GET,http://127.0.0.1:8000/page/home,1736408730,,404,request
+b8336d,127.0.0.1,GET,http://127.0.0.1:8000/page,1736408731,,200,request
+599acd,127.0.0.1,GET,http://127.0.0.1:8000/,1736408731,,404,request
+27af06,127.0.0.1,GET,http://127.0.0.1:8000/page,1736408738,,200,request
+1ca5d7,127.0.0.1,GET,http://127.0.0.1:8000/assets/styles/%7B%7B%20asset('images/stardew1.jpeg')%20%7D%7D,1736408738,c5e841,404,request
+c5e841,127.0.0.1,GET,http://127.0.0.1:8000/assets/styles/%7B%7B%20asset('images/stardew1.jpeg')%20%7D%7D,1736408738,,404,request
