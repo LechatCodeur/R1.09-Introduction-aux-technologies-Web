@@ -7,81 +7,47 @@
   
 </style>
 
-<div class="Labarre">
-    <a href="">Le Jeux/Les Lieux Important</a>
-    <a href="Metier.html">Les Compétances</a>
-    <a href="Personage.html">Les Personnages important</a>
-    <span id="heure"></span> 
-    <form action="#" method="post">
-      <label for="nom">Nom:</label>
-      <input type="text" id="nom" name="nom" required>
-  
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-  
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-  
-      <button type="submit">Envoyer</button>
-  </form>
-  </div>
-  <br>
-  <div class="Case">
-    <h1>Le Jeu</h1>
-    <img src="{{ asset('images/stardew1.jpg') }}" alt="Stardew">
-    <div class="text">
-      <p>
-        But du jeux:<br>        
-        -Faire de l'argent<br>
-        -Organiser sa ferme<br>
-        -Découvrir PelicanTown et ses habitants<br> 
-      </p>
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
     </div>
-    <h2>Le 26/02/2016</h2>
   </div>
+</nav>
+ 
 
-  <div class="Case">
-    <h1>La Ferme</h1>
-    <img src="{{ asset('images/stardew2.jpg') }}" alt="Ferme">
-    <div class="text">
-      <p>Notre lieu de vie et de travail on nous allons cultiver des champs,élever des animaux ,décorer comme bon nous le semble</p>
-    </div>
-    <h2>Le 30/02/2016</h2>
-  </div>
 
-  <div class="Case">
-    <h1>La Mine</h1>
-    <img src="{{ asset('images/stardew3.jpg') }}" alt="Mine">
-    <div class="text">
-      <p>Un endroit rempli de richesse des minerais,des pierre précieuse ainsi que de nombre danger </p>
-    </div>
-    <h2>Le 31/02/2016</h2>
-  </div>
-
-  <div class="Case">
-    <h1>Pelican Town</h1>
-    <img src="{{ asset('images/stardew4.jpg') }}" alt="Pelican Town">
-    <div class="text">
-      <p>Le lieu de vie des villageois un endroit regorgeant de mystère et d'intèraction</p>
-    </div>
-    <h2>Le 05/03/2016</h2>
-  </div>
-  <div class="Case">
-    <h1>Desert</h1>
-    <img src="{{ asset('images/desert.jpg') }}" alt="Pelican Town">
-    <div class="text">
-      <p>Le desert un endroit dangereux ou l'on peut acquérir de grande richesse mais il ne faut pas être trop avare</p>
-    </div>
-    <h2>Le 08/03/2016</h2>
-  </div>
-
-  <div class="Case">
-    <h1>île gingembre</h1>
-    <img src="{{ asset('images/île.jpg') }}" alt="Pelican Town">
-    <div class="text">
-      <p>Une île paradisiaque ou règne un été eternel et ou l'on peut visiter le volcan</p>
-    </div>
-    <h2>Le 15/03/2016</h2>
-  </div>
-  <h>hugo sanchez durante 2024</h>
 {% endblock %}

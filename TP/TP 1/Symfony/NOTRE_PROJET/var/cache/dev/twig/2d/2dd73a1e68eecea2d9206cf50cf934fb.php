@@ -53,27 +53,32 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield "<!DOCTYPE html>
 <html>
     <head>
+        
+        
         <meta charset=\"UTF-8\">
         <title>";
-        // line 5
+        // line 7
         yield from $this->unwrap()->yieldBlock('title', $context, $blocks);
         yield "</title>
-        <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>\">
+        <link rel=\"stylesheet\" href=\"";
+        // line 8
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("Style/bootstrap.min.css"), "html", null, true);
+        yield "\">
         ";
-        // line 7
-        yield from $this->unwrap()->yieldBlock('stylesheets', $context, $blocks);
         // line 9
+        yield from $this->unwrap()->yieldBlock('stylesheets', $context, $blocks);
+        // line 11
         yield "
         ";
-        // line 10
+        // line 12
         yield from $this->unwrap()->yieldBlock('javascripts', $context, $blocks);
-        // line 13
+        // line 15
         yield "    </head>
     <body>
         ";
-        // line 15
+        // line 17
         yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
-        // line 16
+        // line 18
         yield "    </body>
 </html>
 ";
@@ -86,7 +91,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 5
+    // line 7
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -109,7 +114,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 7
+    // line 9
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -122,7 +127,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 8
+        // line 10
         yield "        ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -133,7 +138,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 10
+    // line 12
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -146,10 +151,10 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 11
+        // line 13
         yield "            ";
         yield from $this->unwrap()->yieldBlock('importmap', $context, $blocks);
-        // line 12
+        // line 14
         yield "        ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -160,7 +165,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 11
+    // line 13
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -183,7 +188,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 15
+    // line 17
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -216,9 +221,17 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
     /**
      * @codeCoverageIgnore
      */
+    public function isTraitable(): bool
+    {
+        return false;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
     public function getDebugInfo(): array
     {
-        return array (  187 => 15,  164 => 11,  153 => 12,  150 => 11,  137 => 10,  126 => 8,  113 => 7,  90 => 5,  77 => 16,  75 => 15,  71 => 13,  69 => 10,  66 => 9,  64 => 7,  59 => 5,  53 => 1,);
+        return array (  192 => 17,  169 => 13,  158 => 14,  155 => 13,  142 => 12,  131 => 10,  118 => 9,  95 => 7,  82 => 18,  80 => 17,  76 => 15,  74 => 12,  71 => 11,  69 => 9,  65 => 8,  61 => 7,  53 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -226,9 +239,11 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         return new Source("<!DOCTYPE html>
 <html>
     <head>
+        
+        
         <meta charset=\"UTF-8\">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>\">
+        <link rel=\"stylesheet\" href=\"{{ asset('Style/bootstrap.min.css') }}\">
         {% block stylesheets %}
         {% endblock %}
 
