@@ -133,8 +133,8 @@ class __TwigTemplate_f888ba043c2b42eb72e84901c5eccf21 extends Template
                 <div class=\"card-body\">
                     <h4>Informations de Contact</h4>
                     <ul class=\"list-unstyled\">
-                        <li><img src=\"Images/tel.png\" alt=\"Téléphone\" class=\"me-2\" /> <strong>Téléphone:</strong> +33 6 77 64 23 74</li>
-                        <li><img src=\"path/to/address-icon.png\" alt=\"Adresse\" class=\"me-2\" /> <strong>Adresse:</strong> 123 Rue de Exemple, Paris, France</li>
+                        <li><img src=\"Images/tel.png\" alt=\"Téléphone\" widht=\"40px\" height=\"30px\" class=\"me-2\" /> <strong>Téléphone:</strong> +33 6 77 64 23 74</li>
+                        <li><img src=\"Images/house.png\" alt=\"addresse\" widht=\"40px\" height=\"40px\" class=\"me-2\" /> <strong>Adresse:</strong> 9 Rue Louis Pergaud, Salaise-Sur-Sanne, France</li>
                     </ul>
                 </div>
             </div>
@@ -240,8 +240,8 @@ class __TwigTemplate_f888ba043c2b42eb72e84901c5eccf21 extends Template
                 <div class=\"card-body\">
                     <h4>Informations de Contact</h4>
                     <ul class=\"list-unstyled\">
-                        <li><img src=\"Images/tel.png\" alt=\"Téléphone\" class=\"me-2\" /> <strong>Téléphone:</strong> +33 6 77 64 23 74</li>
-                        <li><img src=\"path/to/address-icon.png\" alt=\"Adresse\" class=\"me-2\" /> <strong>Adresse:</strong> 123 Rue de Exemple, Paris, France</li>
+                        <li><img src=\"Images/tel.png\" alt=\"Téléphone\" widht=\"40px\" height=\"30px\" class=\"me-2\" /> <strong>Téléphone:</strong> +33 6 77 64 23 74</li>
+                        <li><img src=\"Images/house.png\" alt=\"addresse\" widht=\"40px\" height=\"40px\" class=\"me-2\" /> <strong>Adresse:</strong> 9 Rue Louis Pergaud, Salaise-Sur-Sanne, France</li>
                     </ul>
                 </div>
             </div>
