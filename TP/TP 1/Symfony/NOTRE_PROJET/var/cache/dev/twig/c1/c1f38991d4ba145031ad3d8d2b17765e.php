@@ -73,7 +73,7 @@ class __TwigTemplate_f888ba043c2b42eb72e84901c5eccf21 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        yield "Page4";
+        yield "Contact";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -98,103 +98,106 @@ class __TwigTemplate_f888ba043c2b42eb72e84901c5eccf21 extends Template
 
         // line 6
         yield "<style>
+  /* Section de contact */
   .contact-section {
-            background: #f9f9f9;
-            padding: 60px 0;
-            border-radius: 10px;
-        }
+    background: #f9f9f9;
+    padding: 30px 20px; /* Réduction du padding pour tout tenir dans un seul écran */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 960px; /* Limite la largeur de la section */
+    margin: 0 auto; /* Centre la section horizontalement */
+  }
 
-        .contact-section h2 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 30px;
-        }
+  .contact-section h2 {
+    font-size: 2rem; /* Taille modifiée pour s'adapter à la taille de l'écran */
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px; /* Moins de marge pour tout tenir sur un seul écran */
+    text-align: center;
+  }
 
-        .contact-details {
-            font-size: 1.2rem;
-            margin-top: 30px;
-        }
-        
-        .contact-details p {
-            margin-bottom: 15px;
-        }
+  .contact-details {
+    font-size: 1rem; /* Taille plus petite pour tenir tout sur un seul écran */
+    color: #555;
+  }
 
-        .social-icons {
-            margin-top: 30px;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-        }
+  .contact-details p {
+    margin-bottom: 10px;
+  }
 
-        .social-icons a {
-            margin-right: 20px;
-            display: inline-block;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-        }
+  .contact-details a {
+    color: #007bff;
+    text-decoration: none;
+  }
 
-        .social-icons a:hover {
-            transform: scale(1.2); /* Effet d'agrandissement au survol */
-        }
+  .contact-details a:hover {
+    text-decoration: underline;
+  }
 
-        .social-icons img {
-            width: 40px; /* Taille des icônes */
-            height: 40px;
-            transition: opacity 0.3s ease;
-        }
+  /* Icônes de réseaux sociaux */
+  .social-icons {
+    margin-top: 20px; /* Réduction du margin pour garder de l'espace */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-        .social-icons a:hover img {
-            opacity: 0.8;
-        }
+  .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    transform: scale(1.2); /* Effet d'agrandissement au survol */
+  }
+
+  .social-icons img {
+    width: 45px;
+    height: 45px;
+    transition: opacity 0.3s ease;
+  }
+
+  .social-icons a:hover img {
+    opacity: 0.8;
+  }
+
+  /* Pour centrer la boîte de contenu verticalement et horizontalement */
+  .contact-page-wrapper {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100vh; /* Hauteur de la fenêtre pour tenir sur un seul écran */
+    padding: 0 20px; /* Espacement horizontal */
+    overflow: hidden; /* Empêche le défilement */
+  }
+
+  /* Pour les petites tailles d'écran */
+  @media (max-width: 767px) {
+    .contact-section {
+      padding: 20px; /* Moins de padding sur mobile */
+    }
+
+    .contact-section h2 {
+      font-size: 1.6rem; /* Taille plus petite sur mobile */
+    }
+
+    .contact-details {
+      font-size: 0.9rem; /* Plus petit sur mobile */
+    }
+
+    .social-icons img {
+      width: 35px;
+      height: 35px; /* Taille réduite des icônes sur mobile */
+    }
+  }
 </style>
-<nav class=\"navbar navbar-expand-lg bg-dark\" data-bs-theme=\"dark\">
-    <div class=\"container-fluid\">
-      <a class=\"navbar-brand\" href=\"";
-        // line 58
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page1");
-        yield "\">
-        <img src=\"";
-        // line 59
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/logo.png"), "html", null, true);
-        yield "\" alt=\"Description de l'image\" width=\"120px\" height=\"80px\">
-      </a>
-      <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarColor02\" aria-controls=\"navbarColor02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-        <span class=\"navbar-toggler-icon\"></span>
-      </button>
-      <div class=\"collapse navbar-collapse\" id=\"navbarColor02\">
-        <ul class=\"navbar-nav me-auto\">
-          <li class=\"nav-item\">
-            <a class=\"nav-link\" href=\"";
-        // line 67
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page1");
-        yield "\">Accueil</a>
-          </li>
-          <li class=\"nav-item\">
-            <a class=\"nav-link\" href=\"";
-        // line 70
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page2");
-        yield "\">Présentation</a>
-          </li>
-          <li class=\"nav-item\">
-            <a class=\"nav-link\" href=\"";
-        // line 73
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page3");
-        yield "\">Portfolio</a>
-          </li>
-          <li class=\"nav-item\">
-            <a class=\"nav-link active\" href=\"";
-        // line 76
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page4");
-        yield "\">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+
+<div class=\"contact-page-wrapper\">
   <div class=\"container contact-section\">
     <div class=\"row\">
         <!-- Informations de contact -->
-        <div class=\"col-lg-6\">
+        <div class=\"col-md-6 col-12 mb-4\">
             <h2>Contactez-moi</h2>
             <div class=\"contact-details\">
                 <p><strong>Email :</strong> <a href=\"mailto:hsanchezdurante@gmail.com\">hsanchezdurante@gmail.com</a></p>
@@ -204,26 +207,33 @@ class __TwigTemplate_f888ba043c2b42eb72e84901c5eccf21 extends Template
         </div>
 
         <!-- Réseaux sociaux -->
-        <div class=\"col-lg-6\">
+        <div class=\"col-md-6 col-12\">
             <h2>Retrouvez-moi sur</h2>
             <div class=\"social-icons\">
                 <a href=\"https://github.com/LechatCodeur\" target=\"_blank\" title=\"GitHub\">
-                    <img src=\"/Images/github.png\" alt=\"GitHub\">
+                    <img src=\"";
+        // line 120
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/github.png"), "html", null, true);
+        yield "\" alt=\"GitHub\">
                 </a>
                 <a href=\"https://www.linkedin.com/in/tonprofil\" target=\"_blank\" title=\"LinkedIn\">
-                    <img src=\"/images/icons/linkedin-icon.png\" alt=\"LinkedIn\">
+                    <img src=\"";
+        // line 123
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/icons/linkedin-icon.png"), "html", null, true);
+        yield "\" alt=\"LinkedIn\">
                 </a>
                 <a href=\"https://twitter.com/tonprofil\" target=\"_blank\" title=\"Twitter\">
-                    <img src=\"/images/icons/twitter-icon.png\" alt=\"Twitter\">
+                    <img src=\"";
+        // line 126
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/icons/twitter-icon.png"), "html", null, true);
+        yield "\" alt=\"Twitter\">
                 </a>
                 <!-- Ajoute d'autres icônes si nécessaire -->
             </div>
         </div>
     </div>
+  </div>
 </div>
-  <footer class=\"bg-dark text-white text-center py-4 mt-5\">
-    <p>&copy; 2025 Hugo Sanchez Durante. Portfolio réalisé dans le cadre de la SAE 1.04 - BUT Réseaux et Télécommunications</p>
-  </footer>
 
 ";
         
@@ -256,96 +266,117 @@ class __TwigTemplate_f888ba043c2b42eb72e84901c5eccf21 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  187 => 76,  181 => 73,  175 => 70,  169 => 67,  158 => 59,  154 => 58,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
+        return array (  228 => 126,  222 => 123,  216 => 120,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
     }
 
     public function getSourceContext(): Source
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Page4{% endblock %}
+{% block title %}Contact{% endblock %}
 
 {% block body %}
 <style>
+  /* Section de contact */
   .contact-section {
-            background: #f9f9f9;
-            padding: 60px 0;
-            border-radius: 10px;
-        }
+    background: #f9f9f9;
+    padding: 30px 20px; /* Réduction du padding pour tout tenir dans un seul écran */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 960px; /* Limite la largeur de la section */
+    margin: 0 auto; /* Centre la section horizontalement */
+  }
 
-        .contact-section h2 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: #333;
-            margin-bottom: 30px;
-        }
+  .contact-section h2 {
+    font-size: 2rem; /* Taille modifiée pour s'adapter à la taille de l'écran */
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px; /* Moins de marge pour tout tenir sur un seul écran */
+    text-align: center;
+  }
 
-        .contact-details {
-            font-size: 1.2rem;
-            margin-top: 30px;
-        }
-        
-        .contact-details p {
-            margin-bottom: 15px;
-        }
+  .contact-details {
+    font-size: 1rem; /* Taille plus petite pour tenir tout sur un seul écran */
+    color: #555;
+  }
 
-        .social-icons {
-            margin-top: 30px;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-        }
+  .contact-details p {
+    margin-bottom: 10px;
+  }
 
-        .social-icons a {
-            margin-right: 20px;
-            display: inline-block;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-        }
+  .contact-details a {
+    color: #007bff;
+    text-decoration: none;
+  }
 
-        .social-icons a:hover {
-            transform: scale(1.2); /* Effet d'agrandissement au survol */
-        }
+  .contact-details a:hover {
+    text-decoration: underline;
+  }
 
-        .social-icons img {
-            width: 40px; /* Taille des icônes */
-            height: 40px;
-            transition: opacity 0.3s ease;
-        }
+  /* Icônes de réseaux sociaux */
+  .social-icons {
+    margin-top: 20px; /* Réduction du margin pour garder de l'espace */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-        .social-icons a:hover img {
-            opacity: 0.8;
-        }
+  .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    transform: scale(1.2); /* Effet d'agrandissement au survol */
+  }
+
+  .social-icons img {
+    width: 45px;
+    height: 45px;
+    transition: opacity 0.3s ease;
+  }
+
+  .social-icons a:hover img {
+    opacity: 0.8;
+  }
+
+  /* Pour centrer la boîte de contenu verticalement et horizontalement */
+  .contact-page-wrapper {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100vh; /* Hauteur de la fenêtre pour tenir sur un seul écran */
+    padding: 0 20px; /* Espacement horizontal */
+    overflow: hidden; /* Empêche le défilement */
+  }
+
+  /* Pour les petites tailles d'écran */
+  @media (max-width: 767px) {
+    .contact-section {
+      padding: 20px; /* Moins de padding sur mobile */
+    }
+
+    .contact-section h2 {
+      font-size: 1.6rem; /* Taille plus petite sur mobile */
+    }
+
+    .contact-details {
+      font-size: 0.9rem; /* Plus petit sur mobile */
+    }
+
+    .social-icons img {
+      width: 35px;
+      height: 35px; /* Taille réduite des icônes sur mobile */
+    }
+  }
 </style>
-<nav class=\"navbar navbar-expand-lg bg-dark\" data-bs-theme=\"dark\">
-    <div class=\"container-fluid\">
-      <a class=\"navbar-brand\" href=\"{{ path('app_page1') }}\">
-        <img src=\"{{ asset('images/logo.png') }}\" alt=\"Description de l'image\" width=\"120px\" height=\"80px\">
-      </a>
-      <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarColor02\" aria-controls=\"navbarColor02\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-        <span class=\"navbar-toggler-icon\"></span>
-      </button>
-      <div class=\"collapse navbar-collapse\" id=\"navbarColor02\">
-        <ul class=\"navbar-nav me-auto\">
-          <li class=\"nav-item\">
-            <a class=\"nav-link\" href=\"{{ path('app_page1') }}\">Accueil</a>
-          </li>
-          <li class=\"nav-item\">
-            <a class=\"nav-link\" href=\"{{ path('app_page2') }}\">Présentation</a>
-          </li>
-          <li class=\"nav-item\">
-            <a class=\"nav-link\" href=\"{{ path('app_page3') }}\">Portfolio</a>
-          </li>
-          <li class=\"nav-item\">
-            <a class=\"nav-link active\" href=\"{{ path('app_page4') }}\">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+
+<div class=\"contact-page-wrapper\">
   <div class=\"container contact-section\">
     <div class=\"row\">
         <!-- Informations de contact -->
-        <div class=\"col-lg-6\">
+        <div class=\"col-md-6 col-12 mb-4\">
             <h2>Contactez-moi</h2>
             <div class=\"contact-details\">
                 <p><strong>Email :</strong> <a href=\"mailto:hsanchezdurante@gmail.com\">hsanchezdurante@gmail.com</a></p>
@@ -355,26 +386,24 @@ class __TwigTemplate_f888ba043c2b42eb72e84901c5eccf21 extends Template
         </div>
 
         <!-- Réseaux sociaux -->
-        <div class=\"col-lg-6\">
+        <div class=\"col-md-6 col-12\">
             <h2>Retrouvez-moi sur</h2>
             <div class=\"social-icons\">
                 <a href=\"https://github.com/LechatCodeur\" target=\"_blank\" title=\"GitHub\">
-                    <img src=\"/Images/github.png\" alt=\"GitHub\">
+                    <img src=\"{{ asset('images/github.png') }}\" alt=\"GitHub\">
                 </a>
                 <a href=\"https://www.linkedin.com/in/tonprofil\" target=\"_blank\" title=\"LinkedIn\">
-                    <img src=\"/images/icons/linkedin-icon.png\" alt=\"LinkedIn\">
+                    <img src=\"{{ asset('images/icons/linkedin-icon.png') }}\" alt=\"LinkedIn\">
                 </a>
                 <a href=\"https://twitter.com/tonprofil\" target=\"_blank\" title=\"Twitter\">
-                    <img src=\"/images/icons/twitter-icon.png\" alt=\"Twitter\">
+                    <img src=\"{{ asset('images/icons/twitter-icon.png') }}\" alt=\"Twitter\">
                 </a>
                 <!-- Ajoute d'autres icônes si nécessaire -->
             </div>
         </div>
     </div>
+  </div>
 </div>
-  <footer class=\"bg-dark text-white text-center py-4 mt-5\">
-    <p>&copy; 2025 Hugo Sanchez Durante. Portfolio réalisé dans le cadre de la SAE 1.04 - BUT Réseaux et Télécommunications</p>
-  </footer>
 
 {% endblock %}
 ", "page/contact.html.twig", "C:\\Users\\Utilisateur\\Desktop\\Cours\\S1 RT1 2024_2025\\Cours_TD_TP\\R1.09 Introduction aux technologies Web\\TP\\TP 1\\Symfony\\NOTRE_PROJET\\templates\\page\\contact.html.twig");

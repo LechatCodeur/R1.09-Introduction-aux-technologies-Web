@@ -15,10 +15,10 @@ return [
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/xdebug' => [[['_route' => '_profiler_xdebug', '_controller' => 'web_profiler.controller.profiler::xdebugAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
-        '/page1' => [[['_route' => 'app_page1', '_controller' => 'App\\Controller\\PageController::page1'], null, null, null, false, false, null]],
-        '/page2' => [[['_route' => 'app_page2', '_controller' => 'App\\Controller\\PageController::page2'], null, null, null, false, false, null]],
-        '/page3' => [[['_route' => 'app_page3', '_controller' => 'App\\Controller\\PageController::page3'], null, null, null, false, false, null]],
-        '/page4' => [[['_route' => 'app_page4', '_controller' => 'App\\Controller\\PageController::page4'], null, null, null, false, false, null]],
+        '/accueil' => [[['_route' => 'app_page1', '_controller' => 'App\\Controller\\PageController::accueil'], null, null, null, false, false, null]],
+        '/présentation' => [[['_route' => 'app_page2', '_controller' => 'App\\Controller\\PageController::présentation'], null, null, null, false, false, null]],
+        '/portfolio' => [[['_route' => 'app_page3', '_controller' => 'App\\Controller\\PageController::portfolio'], null, null, null, false, false, null]],
+        '/contact' => [[['_route' => 'app_page4', '_controller' => 'App\\Controller\\PageController::contact'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

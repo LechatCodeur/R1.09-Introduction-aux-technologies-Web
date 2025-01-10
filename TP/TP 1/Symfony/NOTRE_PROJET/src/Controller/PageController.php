@@ -9,8 +9,8 @@ use Symfony\Component\Routing\Attribute\Route;
 class PageController extends AbstractController
 {
     // Route pour la page 1
-    #[Route('/page1', name: 'app_page1')]
-    public function page1(): Response
+    #[Route('/accueil', name: 'app_page1')]
+    public function accueil(): Response
     {
         return $this->render('page/accueil.html.twig', [
             'controller_name' => 'PageController',
@@ -18,8 +18,8 @@ class PageController extends AbstractController
     }
 
     // Route pour la page 2
-    #[Route('/page2', name: 'app_page2')]
-    public function page2(): Response
+    #[Route('/présentation', name: 'app_page2')]
+    public function présentation(): Response
     {
         return $this->render('page/présentation.html.twig', [
             'controller_name' => 'PageController',
@@ -27,8 +27,8 @@ class PageController extends AbstractController
     }
 
     // Route pour la page 3
-    #[Route('/page3', name: 'app_page3')]
-    public function page3(): Response
+    #[Route('/portfolio', name: 'app_page3')]
+    public function portfolio(): Response
     {
         return $this->render('page/portfolio.html.twig', [
             'controller_name' => 'PageController',
@@ -36,8 +36,8 @@ class PageController extends AbstractController
     }
 
     // Route pour la page 4
-    #[Route('/page4', name: 'app_page4')]
-    public function page4(): Response
+    #[Route('/contact', name: 'app_page4')]
+    public function contact(): Response
     {
         return $this->render('page/contact.html.twig', [
             'controller_name' => 'PageController',

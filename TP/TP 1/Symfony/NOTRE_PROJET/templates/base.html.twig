@@ -7,15 +7,61 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="stylesheet" href="{{ asset('Style/bootstrap.min.css') }}">
 
-        {% block stylesheets %}
-        
-        {% endblock %}
+         <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(90deg, #0055A4 33%, #FFFFFF 33% 66%, #EF4135 66%);
+            animation: moveBackground 5s linear infinite;
+          }
+          footer {
+             position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            }
+            
+         </style>
+        {% block stylesheets %}{% endblock %}
 
         {% block javascripts %}
             {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>&copy; 2025 Hugo Sanchez Durante. Portfolio réalisé dans le cadre de la SAE 1.04 - BUT Réseaux et Télécommunications</p>
+        </footer>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="{{ path('app_page1') }}">
+                <img src="{{ asset('images/logo.png') }}" alt="Logo" width="160px" height="80px">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_page1') }}">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_page2') }}">Présentation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_page3') }}">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="{{ path('app_page4') }}">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        
+        {% block body %}
+        
+        
+        {% endblock %}
     </body>
 </html>
