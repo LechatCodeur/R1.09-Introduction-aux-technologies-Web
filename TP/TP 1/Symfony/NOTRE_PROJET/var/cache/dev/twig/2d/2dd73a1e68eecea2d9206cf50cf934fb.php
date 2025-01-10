@@ -66,42 +66,51 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield "\">
 
          <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            background: linear-gradient(90deg, #0055A4 33%, #FFFFFF 33% 66%, #EF4135 66%);
-            animation: moveBackground 5s linear infinite;
-          }
-          footer {
-             position: absolute;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            }
+            html, body {
+              background: linear-gradient(90deg, #0055A4 33%, #FFFFFF 33% 66%, #EF4135 66%);
+              height: 100%;
+              margin: 0;
+              display: flex;
+              flex-direction: column;
+              } 
+              .content {
+              flex: 1;
+              }
+              footer {
+        background-color: #343a40;
+        color: white; 
+        text-align: center;
+        padding: 15px 0; 
+        margin-top: auto;
+        width: 100%;
+    }
+    @media (max-width: 576px) {
+        footer p {
+            font-size: 0.9rem;
+        }
+    }
             
          </style>
         ";
-        // line 25
+        // line 36
         yield from $this->unwrap()->yieldBlock('stylesheets', $context, $blocks);
-        // line 26
+        // line 37
         yield "
         ";
-        // line 27
+        // line 38
         yield from $this->unwrap()->yieldBlock('javascripts', $context, $blocks);
-        // line 30
+        // line 41
         yield "    </head>
     <body>
-        <footer class=\"bg-dark text-white text-center py-4 mt-5\">
-        <p>&copy; 2025 Hugo Sanchez Durante. Portfolio réalisé dans le cadre de la SAE 1.04 - BUT Réseaux et Télécommunications</p>
-        </footer>
+        
         <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">
             <div class=\"container-fluid\">
               <a class=\"navbar-brand\" href=\"";
-        // line 37
+        // line 46
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page1");
         yield "\">
                 <img src=\"";
-        // line 38
+        // line 47
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/logo.png"), "html", null, true);
         yield "\" alt=\"Logo\" width=\"160px\" height=\"80px\">
               </a>
@@ -112,25 +121,25 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
                 <ul class=\"navbar-nav me-auto\">
                   <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"";
-        // line 46
+        // line 55
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page1");
         yield "\">Accueil</a>
                   </li>
                   <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"";
-        // line 49
+        // line 58
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page2");
         yield "\">Présentation</a>
                   </li>
                   <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"";
-        // line 52
+        // line 61
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page3");
         yield "\">Portfolio</a>
                   </li>
                   <li class=\"nav-item\">
                     <a class=\"nav-link active\" href=\"";
-        // line 55
+        // line 64
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page4");
         yield "\">Contact</a>
                   </li>
@@ -140,10 +149,14 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         </nav>
         
         ";
-        // line 62
+        // line 71
         yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
-        // line 66
-        yield "    </body>
+        // line 75
+        yield "        
+    </body>
+    <footer>
+      <p>&copy; 2025 Hugo Sanchez Durante. Portfolio réalisé dans le cadre de la SAE 1.04 - BUT Réseaux et Télécommunications</p>
+  </footer>
 </html>
 ";
         
@@ -178,7 +191,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 25
+    // line 36
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -200,7 +213,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 27
+    // line 38
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -213,10 +226,10 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 28
+        // line 39
         yield "            ";
         yield from $this->unwrap()->yieldBlock('importmap', $context, $blocks);
-        // line 29
+        // line 40
         yield "        ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -227,7 +240,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 28
+    // line 39
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -250,7 +263,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 62
+    // line 71
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -263,7 +276,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 63
+        // line 72
         yield "        
         
         ";
@@ -297,7 +310,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  267 => 63,  254 => 62,  231 => 28,  220 => 29,  217 => 28,  204 => 27,  182 => 25,  159 => 7,  146 => 66,  144 => 62,  134 => 55,  128 => 52,  122 => 49,  116 => 46,  105 => 38,  101 => 37,  92 => 30,  90 => 27,  87 => 26,  85 => 25,  65 => 8,  61 => 7,  53 => 1,);
+        return array (  280 => 72,  267 => 71,  244 => 39,  233 => 40,  230 => 39,  217 => 38,  195 => 36,  172 => 7,  155 => 75,  153 => 71,  143 => 64,  137 => 61,  131 => 58,  125 => 55,  114 => 47,  110 => 46,  103 => 41,  101 => 38,  98 => 37,  96 => 36,  65 => 8,  61 => 7,  53 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -312,18 +325,29 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         <link rel=\"stylesheet\" href=\"{{ asset('Style/bootstrap.min.css') }}\">
 
          <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            background: linear-gradient(90deg, #0055A4 33%, #FFFFFF 33% 66%, #EF4135 66%);
-            animation: moveBackground 5s linear infinite;
-          }
-          footer {
-             position: absolute;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            }
+            html, body {
+              background: linear-gradient(90deg, #0055A4 33%, #FFFFFF 33% 66%, #EF4135 66%);
+              height: 100%;
+              margin: 0;
+              display: flex;
+              flex-direction: column;
+              } 
+              .content {
+              flex: 1;
+              }
+              footer {
+        background-color: #343a40;
+        color: white; 
+        text-align: center;
+        padding: 15px 0; 
+        margin-top: auto;
+        width: 100%;
+    }
+    @media (max-width: 576px) {
+        footer p {
+            font-size: 0.9rem;
+        }
+    }
             
          </style>
         {% block stylesheets %}{% endblock %}
@@ -333,9 +357,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         {% endblock %}
     </head>
     <body>
-        <footer class=\"bg-dark text-white text-center py-4 mt-5\">
-        <p>&copy; 2025 Hugo Sanchez Durante. Portfolio réalisé dans le cadre de la SAE 1.04 - BUT Réseaux et Télécommunications</p>
-        </footer>
+        
         <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">
             <div class=\"container-fluid\">
               <a class=\"navbar-brand\" href=\"{{ path('app_page1') }}\">
@@ -367,7 +389,11 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         
         
         {% endblock %}
+        
     </body>
+    <footer>
+      <p>&copy; 2025 Hugo Sanchez Durante. Portfolio réalisé dans le cadre de la SAE 1.04 - BUT Réseaux et Télécommunications</p>
+  </footer>
 </html>
 ", "base.html.twig", "C:\\Users\\Utilisateur\\Desktop\\Cours\\S1 RT1 2024_2025\\Cours_TD_TP\\R1.09 Introduction aux technologies Web\\TP\\TP 1\\Symfony\\NOTRE_PROJET\\templates\\base.html.twig");
     }

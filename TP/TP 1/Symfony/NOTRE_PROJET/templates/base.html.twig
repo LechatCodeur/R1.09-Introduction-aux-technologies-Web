@@ -8,18 +8,29 @@
         <link rel="stylesheet" href="{{ asset('Style/bootstrap.min.css') }}">
 
          <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            background: linear-gradient(90deg, #0055A4 33%, #FFFFFF 33% 66%, #EF4135 66%);
-            animation: moveBackground 5s linear infinite;
-          }
-          footer {
-             position: absolute;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            }
+            html, body {
+              background: linear-gradient(90deg, #0055A4 33%, #FFFFFF 33% 66%, #EF4135 66%);
+              height: 100%;
+              margin: 0;
+              display: flex;
+              flex-direction: column;
+              } 
+              .content {
+              flex: 1;
+              }
+              footer {
+        background-color: #343a40;
+        color: white; 
+        text-align: center;
+        padding: 15px 0; 
+        margin-top: auto;
+        width: 100%;
+    }
+    @media (max-width: 576px) {
+        footer p {
+            font-size: 0.9rem;
+        }
+    }
             
          </style>
         {% block stylesheets %}{% endblock %}
@@ -29,9 +40,7 @@
         {% endblock %}
     </head>
     <body>
-        <footer class="bg-dark text-white text-center py-4 mt-5">
-        <p>&copy; 2025 Hugo Sanchez Durante. Portfolio réalisé dans le cadre de la SAE 1.04 - BUT Réseaux et Télécommunications</p>
-        </footer>
+        
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="{{ path('app_page1') }}">
@@ -63,5 +72,9 @@
         
         
         {% endblock %}
+        
     </body>
+    <footer>
+      <p>&copy; 2025 Hugo Sanchez Durante. Portfolio réalisé dans le cadre de la SAE 1.04 - BUT Réseaux et Télécommunications</p>
+  </footer>
 </html>

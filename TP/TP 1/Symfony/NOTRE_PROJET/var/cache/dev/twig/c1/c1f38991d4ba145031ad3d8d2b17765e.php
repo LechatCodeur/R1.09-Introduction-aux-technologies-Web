@@ -73,7 +73,7 @@ class __TwigTemplate_f888ba043c2b42eb72e84901c5eccf21 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        yield "Contact";
+        yield "Acceuil";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -97,142 +97,70 @@ class __TwigTemplate_f888ba043c2b42eb72e84901c5eccf21 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        yield "<style>
-  /* Section de contact */
-  .contact-section {
-    background: #f9f9f9;
-    padding: 30px 20px; /* Réduction du padding pour tout tenir dans un seul écran */
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 960px; /* Limite la largeur de la section */
-    margin: 0 auto; /* Centre la section horizontalement */
-  }
-
-  .contact-section h2 {
-    font-size: 2rem; /* Taille modifiée pour s'adapter à la taille de l'écran */
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 20px; /* Moins de marge pour tout tenir sur un seul écran */
-    text-align: center;
-  }
-
-  .contact-details {
-    font-size: 1rem; /* Taille plus petite pour tenir tout sur un seul écran */
-    color: #555;
-  }
-
-  .contact-details p {
-    margin-bottom: 10px;
-  }
-
-  .contact-details a {
-    color: #007bff;
-    text-decoration: none;
-  }
-
-  .contact-details a:hover {
-    text-decoration: underline;
-  }
-
-  /* Icônes de réseaux sociaux */
-  .social-icons {
-    margin-top: 20px; /* Réduction du margin pour garder de l'espace */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .social-icons a {
-    margin: 0 10px;
-    display: inline-block;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-
-  .social-icons a:hover {
-    transform: scale(1.2); /* Effet d'agrandissement au survol */
-  }
-
-  .social-icons img {
-    width: 45px;
-    height: 45px;
-    transition: opacity 0.3s ease;
-  }
-
-  .social-icons a:hover img {
-    opacity: 0.8;
-  }
-
-  /* Pour centrer la boîte de contenu verticalement et horizontalement */
-  .contact-page-wrapper {
-    display: flex;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement */
-    height: 100vh; /* Hauteur de la fenêtre pour tenir sur un seul écran */
-    padding: 0 20px; /* Espacement horizontal */
-    overflow: hidden; /* Empêche le défilement */
-  }
-
-  /* Pour les petites tailles d'écran */
-  @media (max-width: 767px) {
-    .contact-section {
-      padding: 20px; /* Moins de padding sur mobile */
+        yield "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+<style>
+    /* Agrandir la taille des icônes */
+    .social-icon {
+        width: 60px; /* Taille plus grande des icônes */
+        height: 60px;
+        object-fit: cover;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .social-icon:hover {
+        transform: scale(1.2); /* Agrandir l'icône au survol */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ajouter une ombre lors du survol */
     }
 
-    .contact-section h2 {
-      font-size: 1.6rem; /* Taille plus petite sur mobile */
+    /* Supprimer le cercle noir */
+    .social-btn {
+        padding: 0; /* Supprimer le padding pour ne pas avoir de cercle */
+        transition: transform 0.3s ease;
     }
 
-    .contact-details {
-      font-size: 0.9rem; /* Plus petit sur mobile */
+    .social-btn:hover {
+        transform: scale(1.1);
     }
-
-    .social-icons img {
-      width: 35px;
-      height: 35px; /* Taille réduite des icônes sur mobile */
-    }
-  }
 </style>
 
-<div class=\"contact-page-wrapper\">
-  <div class=\"container contact-section\">
-    <div class=\"row\">
-        <!-- Informations de contact -->
-        <div class=\"col-md-6 col-12 mb-4\">
-            <h2>Contactez-moi</h2>
-            <div class=\"contact-details\">
-                <p><strong>Email :</strong> <a href=\"mailto:hsanchezdurante@gmail.com\">hsanchezdurante@gmail.com</a></p>
-                <p><strong>Téléphone :</strong> 06 77 64 23 74</p>
-                <p><strong>Adresse :</strong> 9 Rue Louis Pergaud, Salaise-Sur-Sanne, France</p>
-            </div>
-        </div>
+<div class=\"container py-5\">
+    <div class=\"row justify-content-center\">
+        <div class=\"col-md-8\">
+            <h1 class=\"mb-4 text-center\">Contactez-nous</h1>
 
-        <!-- Réseaux sociaux -->
-        <div class=\"col-md-6 col-12\">
-            <h2>Retrouvez-moi sur</h2>
-            <div class=\"social-icons\">
-                <a href=\"https://github.com/LechatCodeur\" target=\"_blank\" title=\"GitHub\">
-                    <img src=\"";
-        // line 120
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/github.png"), "html", null, true);
-        yield "\" alt=\"GitHub\">
-                </a>
-                <a href=\"https://www.linkedin.com/in/tonprofil\" target=\"_blank\" title=\"LinkedIn\">
-                    <img src=\"";
-        // line 123
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/icons/linkedin-icon.png"), "html", null, true);
-        yield "\" alt=\"LinkedIn\">
-                </a>
-                <a href=\"https://twitter.com/tonprofil\" target=\"_blank\" title=\"Twitter\">
-                    <img src=\"";
-        // line 126
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/icons/twitter-icon.png"), "html", null, true);
-        yield "\" alt=\"Twitter\">
-                </a>
-                <!-- Ajoute d'autres icônes si nécessaire -->
+            <!-- Informations de contact -->
+            <div class=\"card shadow-sm\">
+                <div class=\"card-body\">
+                    <h4>Informations de Contact</h4>
+                    <ul class=\"list-unstyled\">
+                        <li><img src=\"Images/tel.png\" alt=\"Téléphone\" class=\"me-2\" /> <strong>Téléphone:</strong> +33 6 77 64 23 74</li>
+                        <li><img src=\"path/to/address-icon.png\" alt=\"Adresse\" class=\"me-2\" /> <strong>Adresse:</strong> 123 Rue de Exemple, Paris, France</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class=\"my-5\">
+
+            <!-- Réseaux sociaux -->
+            <div class=\"text-center\">
+                <h4>Retrouvez-moi</h4>
+                <div class=\"d-flex justify-content-center\">
+                    <a href=\"https://github.com/LechatCodeur\" class=\"social-btn me-2\" target=\"_blank\">
+                        <img src=\"Images/github.png\" alt=\"GitHub\" class=\"social-icon\" />
+                    </a>
+                    <a href=\"https://www.linkedin.com/in/votre-nom\" class=\"social-btn me-2\" target=\"_blank\">
+                        <img src=\"path/to/linkedin-icon.png\" alt=\"LinkedIn\" class=\"social-icon\" />
+                    </a>
+                    <a href=\"https://twitter.com/votre-utilisateur\" class=\"social-btn me-2\" target=\"_blank\">
+                        <img src=\"path/to/twitter-icon.png\" alt=\"Twitter\" class=\"social-icon\" />
+                    </a>
+                    <a href=\"https://www.instagram.com/votre-utilisateur\" class=\"social-btn\" target=\"_blank\">
+                        <img src=\"path/to/instagram-icon.png\" alt=\"Instagram\" class=\"social-icon\" />
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-  </div>
 </div>
 
 ";
@@ -266,143 +194,80 @@ class __TwigTemplate_f888ba043c2b42eb72e84901c5eccf21 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  228 => 126,  222 => 123,  216 => 120,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
+        return array (  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
     }
 
     public function getSourceContext(): Source
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Contact{% endblock %}
+{% block title %}Acceuil{% endblock %}
 
 {% block body %}
+<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
 <style>
-  /* Section de contact */
-  .contact-section {
-    background: #f9f9f9;
-    padding: 30px 20px; /* Réduction du padding pour tout tenir dans un seul écran */
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 960px; /* Limite la largeur de la section */
-    margin: 0 auto; /* Centre la section horizontalement */
-  }
-
-  .contact-section h2 {
-    font-size: 2rem; /* Taille modifiée pour s'adapter à la taille de l'écran */
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 20px; /* Moins de marge pour tout tenir sur un seul écran */
-    text-align: center;
-  }
-
-  .contact-details {
-    font-size: 1rem; /* Taille plus petite pour tenir tout sur un seul écran */
-    color: #555;
-  }
-
-  .contact-details p {
-    margin-bottom: 10px;
-  }
-
-  .contact-details a {
-    color: #007bff;
-    text-decoration: none;
-  }
-
-  .contact-details a:hover {
-    text-decoration: underline;
-  }
-
-  /* Icônes de réseaux sociaux */
-  .social-icons {
-    margin-top: 20px; /* Réduction du margin pour garder de l'espace */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .social-icons a {
-    margin: 0 10px;
-    display: inline-block;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-
-  .social-icons a:hover {
-    transform: scale(1.2); /* Effet d'agrandissement au survol */
-  }
-
-  .social-icons img {
-    width: 45px;
-    height: 45px;
-    transition: opacity 0.3s ease;
-  }
-
-  .social-icons a:hover img {
-    opacity: 0.8;
-  }
-
-  /* Pour centrer la boîte de contenu verticalement et horizontalement */
-  .contact-page-wrapper {
-    display: flex;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement */
-    height: 100vh; /* Hauteur de la fenêtre pour tenir sur un seul écran */
-    padding: 0 20px; /* Espacement horizontal */
-    overflow: hidden; /* Empêche le défilement */
-  }
-
-  /* Pour les petites tailles d'écran */
-  @media (max-width: 767px) {
-    .contact-section {
-      padding: 20px; /* Moins de padding sur mobile */
+    /* Agrandir la taille des icônes */
+    .social-icon {
+        width: 60px; /* Taille plus grande des icônes */
+        height: 60px;
+        object-fit: cover;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .social-icon:hover {
+        transform: scale(1.2); /* Agrandir l'icône au survol */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ajouter une ombre lors du survol */
     }
 
-    .contact-section h2 {
-      font-size: 1.6rem; /* Taille plus petite sur mobile */
+    /* Supprimer le cercle noir */
+    .social-btn {
+        padding: 0; /* Supprimer le padding pour ne pas avoir de cercle */
+        transition: transform 0.3s ease;
     }
 
-    .contact-details {
-      font-size: 0.9rem; /* Plus petit sur mobile */
+    .social-btn:hover {
+        transform: scale(1.1);
     }
-
-    .social-icons img {
-      width: 35px;
-      height: 35px; /* Taille réduite des icônes sur mobile */
-    }
-  }
 </style>
 
-<div class=\"contact-page-wrapper\">
-  <div class=\"container contact-section\">
-    <div class=\"row\">
-        <!-- Informations de contact -->
-        <div class=\"col-md-6 col-12 mb-4\">
-            <h2>Contactez-moi</h2>
-            <div class=\"contact-details\">
-                <p><strong>Email :</strong> <a href=\"mailto:hsanchezdurante@gmail.com\">hsanchezdurante@gmail.com</a></p>
-                <p><strong>Téléphone :</strong> 06 77 64 23 74</p>
-                <p><strong>Adresse :</strong> 9 Rue Louis Pergaud, Salaise-Sur-Sanne, France</p>
-            </div>
-        </div>
+<div class=\"container py-5\">
+    <div class=\"row justify-content-center\">
+        <div class=\"col-md-8\">
+            <h1 class=\"mb-4 text-center\">Contactez-nous</h1>
 
-        <!-- Réseaux sociaux -->
-        <div class=\"col-md-6 col-12\">
-            <h2>Retrouvez-moi sur</h2>
-            <div class=\"social-icons\">
-                <a href=\"https://github.com/LechatCodeur\" target=\"_blank\" title=\"GitHub\">
-                    <img src=\"{{ asset('images/github.png') }}\" alt=\"GitHub\">
-                </a>
-                <a href=\"https://www.linkedin.com/in/tonprofil\" target=\"_blank\" title=\"LinkedIn\">
-                    <img src=\"{{ asset('images/icons/linkedin-icon.png') }}\" alt=\"LinkedIn\">
-                </a>
-                <a href=\"https://twitter.com/tonprofil\" target=\"_blank\" title=\"Twitter\">
-                    <img src=\"{{ asset('images/icons/twitter-icon.png') }}\" alt=\"Twitter\">
-                </a>
-                <!-- Ajoute d'autres icônes si nécessaire -->
+            <!-- Informations de contact -->
+            <div class=\"card shadow-sm\">
+                <div class=\"card-body\">
+                    <h4>Informations de Contact</h4>
+                    <ul class=\"list-unstyled\">
+                        <li><img src=\"Images/tel.png\" alt=\"Téléphone\" class=\"me-2\" /> <strong>Téléphone:</strong> +33 6 77 64 23 74</li>
+                        <li><img src=\"path/to/address-icon.png\" alt=\"Adresse\" class=\"me-2\" /> <strong>Adresse:</strong> 123 Rue de Exemple, Paris, France</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class=\"my-5\">
+
+            <!-- Réseaux sociaux -->
+            <div class=\"text-center\">
+                <h4>Retrouvez-moi</h4>
+                <div class=\"d-flex justify-content-center\">
+                    <a href=\"https://github.com/LechatCodeur\" class=\"social-btn me-2\" target=\"_blank\">
+                        <img src=\"Images/github.png\" alt=\"GitHub\" class=\"social-icon\" />
+                    </a>
+                    <a href=\"https://www.linkedin.com/in/votre-nom\" class=\"social-btn me-2\" target=\"_blank\">
+                        <img src=\"path/to/linkedin-icon.png\" alt=\"LinkedIn\" class=\"social-icon\" />
+                    </a>
+                    <a href=\"https://twitter.com/votre-utilisateur\" class=\"social-btn me-2\" target=\"_blank\">
+                        <img src=\"path/to/twitter-icon.png\" alt=\"Twitter\" class=\"social-icon\" />
+                    </a>
+                    <a href=\"https://www.instagram.com/votre-utilisateur\" class=\"social-btn\" target=\"_blank\">
+                        <img src=\"path/to/instagram-icon.png\" alt=\"Instagram\" class=\"social-icon\" />
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-  </div>
 </div>
 
 {% endblock %}
