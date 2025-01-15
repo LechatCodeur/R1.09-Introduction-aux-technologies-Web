@@ -15,10 +15,6 @@ return [
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/xdebug' => [[['_route' => '_profiler_xdebug', '_controller' => 'web_profiler.controller.profiler::xdebugAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
-        '/accueil' => [[['_route' => 'app_page1', '_controller' => 'App\\Controller\\PageController::accueil'], null, null, null, false, false, null]],
-        '/présentation' => [[['_route' => 'app_page2', '_controller' => 'App\\Controller\\PageController::présentation'], null, null, null, false, false, null]],
-        '/portfolio' => [[['_route' => 'app_page3', '_controller' => 'App\\Controller\\PageController::portfolio'], null, null, null, false, false, null]],
-        '/contact' => [[['_route' => 'app_page4', '_controller' => 'App\\Controller\\PageController::contact'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'
@@ -40,6 +36,15 @@ return [
                         .')'
                     .')'
                 .')'
+                .'|/(fr|en|la)/(?'
+                    .'|accueil(*:224)'
+                    .'|p(?'
+                        .'|résentation(*:248)'
+                        .'|ortfolio(*:264)'
+                    .')'
+                    .'|contact(*:280)'
+                    .'|CV(*:290)'
+                .')'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -50,8 +55,13 @@ return [
         148 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
         168 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
         181 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
-        191 => [
-            [['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null],
+        191 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
+        224 => [[['_route' => 'app_page1', '_controller' => 'App\\Controller\\PageController::accueil'], ['_locale'], null, null, false, false, null]],
+        248 => [[['_route' => 'app_page2', '_controller' => 'App\\Controller\\PageController::présentation'], ['_locale'], null, null, false, false, null]],
+        264 => [[['_route' => 'app_page3', '_controller' => 'App\\Controller\\PageController::portfolio'], ['_locale'], null, null, false, false, null]],
+        280 => [[['_route' => 'app_page4', '_controller' => 'App\\Controller\\PageController::contact'], ['_locale'], null, null, false, false, null]],
+        290 => [
+            [['_route' => 'app_page5', '_controller' => 'App\\Controller\\PageController::cv'], ['_locale'], null, null, false, false, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

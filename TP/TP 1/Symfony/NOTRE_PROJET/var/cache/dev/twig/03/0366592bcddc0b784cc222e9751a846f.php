@@ -73,7 +73,11 @@ class __TwigTemplate_9802fdbde13b428909822236c81e6d84 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        yield "Présentation";
+        // line 4
+        yield "    ";
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("presentation_title"), "html", null, true);
+        yield "
+";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -83,7 +87,7 @@ class __TwigTemplate_9802fdbde13b428909822236c81e6d84 extends Template
         yield from [];
     }
 
-    // line 5
+    // line 7
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -96,22 +100,19 @@ class __TwigTemplate_9802fdbde13b428909822236c81e6d84 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 6
+        // line 8
         yield "<style>
     html, body {
         height: 100%;
         margin: 0;
     }
-
     .container {
         width: 100%;
         padding: 0 20px;
     }
-
     h1, h2 {
         color: #333;
     }
-
     /* Section de présentation */
     .presentation {
         background: #fff;
@@ -317,63 +318,97 @@ class __TwigTemplate_9802fdbde13b428909822236c81e6d84 extends Template
     .container {
         min-height: 80%;
     }
-
 </style>
-
 
 <div class=\"container\">
 
     <!-- Section de présentation -->
     <div class=\"presentation\">
-        <h2>Bonjour, je suis Hugo Sanchez Durante</h2>
-        <p>
-            Je suis étudiant(e) en <strong>BUT Réseaux et Télécommunications</strong> et passionné(e) par le développement web, les nouvelles technologies, et l'innovation. Ce site est mon portfolio, où je mets en avant mes compétences, mes projets et mes passions.
-        </p>
-        <p>
-            J'aime relever des défis, apprendre de nouvelles compétences et développer des solutions innovantes. Mon objectif est de contribuer à des projets intéressants qui ont un impact positif dans le monde numérique.
-        </p>
+        <h2>";
+        // line 231
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("presentation_intro"), "html", null, true);
+        yield "</h2>
+        <p>";
+        // line 232
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("presentation_description"), "html", null, true);
+        yield "</p>
+        <p>";
+        // line 233
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("presentation_goal"), "html", null, true);
+        yield "</p>
     </div>
 
     <!-- Timeline -->
     <div class=\"timeline\">
-        <h2>Mon parcours</h2>
+        <h2>";
+        // line 238
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("timeline_title"), "html", null, true);
+        yield "</h2>
         <div class=\"timeline-container\">
             <div class=\"timeline-item top\">
                 <div class=\"timeline-point\">
                     <div class=\"timeline-text\">
-                        Actuellement en formation au sein de l'Université de Jean Monnet à Roanne, je me spécialise dans les réseaux et les télécommunications.
+                        ";
+        // line 243
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("timeline_2024_description"), "html", null, true);
+        yield "
                     </div>
                 </div>
-                <h3>2024 - En cours : BUT Réseaux et Télécommunications</h3>
+                <h3>";
+        // line 246
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("timeline_2024_ongoing"), "html", null, true);
+        yield "</h3>
             </div>
             <div class=\"timeline-item bottom\">
                 <div class=\"timeline-point\">
                     <div class=\"timeline-text\">
-                        Au lycée, j'ai fait un bac technologique STI2D. Dans ma dernière année, j'ai participé à la compétition First Tech Challenge France.
+                        ";
+        // line 251
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("timeline_lycee_description"), "html", null, true);
+        yield "
                     </div>
                 </div>
-                <h3>2024 - 2019 : Baccalauréat technologique</h3>
+                <h3>";
+        // line 254
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("timeline_lycee"), "html", null, true);
+        yield "</h3>
             </div>
             <div class=\"timeline-item top\">
                 <div class=\"timeline-point\">
                     <div class=\"timeline-text\">
-                        Au collège j'ai participé au club journal pendant 2 ans et j'ai fait l'option latin pendant 3 ans.
+                        ";
+        // line 259
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("timeline_college_description"), "html", null, true);
+        yield "
                     </div>
                 </div>
-                <h3>2019 - 2014: Collège Jean Ferrat</h3>
+                <h3>";
+        // line 262
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("timeline_college"), "html", null, true);
+        yield "</h3>
             </div>
         </div>
     </div>
 
     <!-- Section loisirs -->
     <div class=\"loisirs\">
-        <h2>Mes loisirs</h2>
-        <p>
-            En dehors de mes études, j'aime consacrer du temps à mes loisirs. Je suis passionné(e) par :
-        </p>
+        <h2>";
+        // line 269
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("hobbies_title"), "html", null, true);
+        yield "</h2>
+        <p>";
+        // line 270
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("hobbies_description"), "html", null, true);
+        yield "</p>
         <ul style=\"text-align: left; font-size: 1.2rem;\">
-            <li><strong>Les jeux vidéo :</strong> Jeux de statègie en temps réels comme Starcraft II.</li>
-            <li><strong>La lecture:</strong> Lire des romans.</li>
+            <li><strong>";
+        // line 272
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("hobbies_video_games"), "html", null, true);
+        yield "</strong></li>
+            <li><strong>";
+        // line 273
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("hobbies_reading"), "html", null, true);
+        yield "</strong></li>
         </ul>
     </div>
 </div>
@@ -408,14 +443,16 @@ class __TwigTemplate_9802fdbde13b428909822236c81e6d84 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
+        return array (  410 => 273,  406 => 272,  401 => 270,  397 => 269,  387 => 262,  381 => 259,  373 => 254,  367 => 251,  359 => 246,  353 => 243,  345 => 238,  337 => 233,  333 => 232,  329 => 231,  104 => 8,  91 => 7,  77 => 4,  64 => 3,  41 => 1,);
     }
 
     public function getSourceContext(): Source
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Présentation{% endblock %}
+{% block title %}
+    {{ 'presentation_title'|trans }}
+{% endblock %}
 
 {% block body %}
 <style>
@@ -423,16 +460,13 @@ class __TwigTemplate_9802fdbde13b428909822236c81e6d84 extends Template
         height: 100%;
         margin: 0;
     }
-
     .container {
         width: 100%;
         padding: 0 20px;
     }
-
     h1, h2 {
         color: #333;
     }
-
     /* Section de présentation */
     .presentation {
         background: #fff;
@@ -638,67 +672,59 @@ class __TwigTemplate_9802fdbde13b428909822236c81e6d84 extends Template
     .container {
         min-height: 80%;
     }
-
 </style>
-
 
 <div class=\"container\">
 
     <!-- Section de présentation -->
     <div class=\"presentation\">
-        <h2>Bonjour, je suis Hugo Sanchez Durante</h2>
-        <p>
-            Je suis étudiant(e) en <strong>BUT Réseaux et Télécommunications</strong> et passionné(e) par le développement web, les nouvelles technologies, et l'innovation. Ce site est mon portfolio, où je mets en avant mes compétences, mes projets et mes passions.
-        </p>
-        <p>
-            J'aime relever des défis, apprendre de nouvelles compétences et développer des solutions innovantes. Mon objectif est de contribuer à des projets intéressants qui ont un impact positif dans le monde numérique.
-        </p>
+        <h2>{{ 'presentation_intro'|trans }}</h2>
+        <p>{{ 'presentation_description'|trans }}</p>
+        <p>{{ 'presentation_goal'|trans }}</p>
     </div>
 
     <!-- Timeline -->
     <div class=\"timeline\">
-        <h2>Mon parcours</h2>
+        <h2>{{ 'timeline_title'|trans }}</h2>
         <div class=\"timeline-container\">
             <div class=\"timeline-item top\">
                 <div class=\"timeline-point\">
                     <div class=\"timeline-text\">
-                        Actuellement en formation au sein de l'Université de Jean Monnet à Roanne, je me spécialise dans les réseaux et les télécommunications.
+                        {{ 'timeline_2024_description'|trans }}
                     </div>
                 </div>
-                <h3>2024 - En cours : BUT Réseaux et Télécommunications</h3>
+                <h3>{{ 'timeline_2024_ongoing'|trans }}</h3>
             </div>
             <div class=\"timeline-item bottom\">
                 <div class=\"timeline-point\">
                     <div class=\"timeline-text\">
-                        Au lycée, j'ai fait un bac technologique STI2D. Dans ma dernière année, j'ai participé à la compétition First Tech Challenge France.
+                        {{ 'timeline_lycee_description'|trans }}
                     </div>
                 </div>
-                <h3>2024 - 2019 : Baccalauréat technologique</h3>
+                <h3>{{ 'timeline_lycee'|trans }}</h3>
             </div>
             <div class=\"timeline-item top\">
                 <div class=\"timeline-point\">
                     <div class=\"timeline-text\">
-                        Au collège j'ai participé au club journal pendant 2 ans et j'ai fait l'option latin pendant 3 ans.
+                        {{ 'timeline_college_description'|trans }}
                     </div>
                 </div>
-                <h3>2019 - 2014: Collège Jean Ferrat</h3>
+                <h3>{{ 'timeline_college'|trans }}</h3>
             </div>
         </div>
     </div>
 
     <!-- Section loisirs -->
     <div class=\"loisirs\">
-        <h2>Mes loisirs</h2>
-        <p>
-            En dehors de mes études, j'aime consacrer du temps à mes loisirs. Je suis passionné(e) par :
-        </p>
+        <h2>{{ 'hobbies_title'|trans }}</h2>
+        <p>{{ 'hobbies_description'|trans }}</p>
         <ul style=\"text-align: left; font-size: 1.2rem;\">
-            <li><strong>Les jeux vidéo :</strong> Jeux de statègie en temps réels comme Starcraft II.</li>
-            <li><strong>La lecture:</strong> Lire des romans.</li>
+            <li><strong>{{ 'hobbies_video_games'|trans }}</strong></li>
+            <li><strong>{{ 'hobbies_reading'|trans }}</strong></li>
         </ul>
     </div>
 </div>
 {% endblock %}
-", "page/présentation.html.twig", "C:\\Users\\Utilisateur\\Desktop\\Cours\\S1 RT1 2024_2025\\Cours_TD_TP\\R1.09 Introduction aux technologies Web\\TP\\TP 1\\Symfony\\NOTRE_PROJET\\templates\\page\\présentation.html.twig");
+", "page/présentation.html.twig", "C:\\Users\\Utilisateur\\Desktop\\Cours\\S1 RT1 2024_2025\\Cours_TD_TP\\R1.09 Introduction aux technologies Web (Complait)\\TP\\TP 1\\Symfony\\NOTRE_PROJET\\templates\\page\\présentation.html.twig");
     }
 }

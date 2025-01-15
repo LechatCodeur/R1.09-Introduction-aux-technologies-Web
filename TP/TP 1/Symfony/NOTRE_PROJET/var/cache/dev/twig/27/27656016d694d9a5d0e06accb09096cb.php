@@ -73,7 +73,7 @@ class __TwigTemplate_79bb1dec90c6d4ffa3f507bab595d58a extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        yield "Acceuil";
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("accueil"), "html", null, true);
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -130,40 +130,78 @@ class __TwigTemplate_79bb1dec90c6d4ffa3f507bab595d58a extends Template
   .section {
     margin-top: 50px;
   }
-
-  /* Amélioration de la section À propos */
   .about-section {
-    background-color: #f8f9fc; /* Fond clair pour améliorer la lisibilité */
+    background-color: #f8f9fc;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   .about-section p {
     font-size: 1.125rem;
-    color: #4e4e4e; /* Texte plus sombre pour une meilleure lisibilité */
+    color: #4e4e4e;
     line-height: 1.6;
   }
   .about-section p strong {
-    color: #333; /* Accentuation des mots-clés */
+    color: #333;
   }
   .about-section h2 {
-    color: #1cc88a; /* Titre de la section avec une couleur plus vive */
+    color: #1cc88a;
+  }
+  .link {
+    align: center;
+    color: #c81c1c;
   }
 </style>
 <div class=\"container py-5\">
     <header class=\"hero-section text-center rounded-3 mb-5\">
-        <h1>Bienvenue sur mon Portfolio</h1>
-        <p class=\"lead\">Ce site a été créé dans le cadre de la <strong>SAE 1.04</strong> de mon programme <strong>BUT Réseaux et Télécommunications</strong>. L'objectif de cette SAE est de réaliser un portfolio personnel en ligne pour mettre en avant mes compétences et projets.</p>
+        <h1>";
+        // line 63
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("bienvenue_portfolio"), "html", null, true);
+        yield "</h1>
+        <p class=\"lead\">
+            ";
+        // line 65
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("objectif_projet"), "html", null, true);
+        yield "
+            <strong>";
+        // line 66
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("sae_1_04"), "html", null, true);
+        yield "</strong>
+            ";
+        // line 67
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("but_reseaux_telecommunications"), "html", null, true);
+        yield "
+            ";
+        // line 68
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("objectif_projet"), "html", null, true);
+        yield "
+        </p>
     </header>
 
     <section class=\"section about-section\">
-        <h2 class=\"section-title mb-4\">À propos de la SAE 1.04</h2>
+        <h2 class=\"section-title mb-4\">";
+        // line 73
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("a_propos_sae_1_04"), "html", null, true);
+        yield "</h2>
         <p class=\"text-body mb-3\">
-            La <strong>SAE 1.04</strong> fait partie de mon programme d'étude en <strong>BUT Réseaux et Télécommunications</strong>. L'objectif est de concevoir et de développer un site web personnel, en utilisant des technologies comme <strong>HTML</strong>, <strong>CSS</strong>, et <strong>JavaScript</strong>, pour créer un portfolio en ligne. Ce projet permet de démontrer les compétences acquises au cours de la formation et de les mettre en valeur de manière professionnelle.
+            ";
+        // line 75
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("description_sae_1_04"), "html", null, true);
+        yield "
         </p>
         <p class=\"text-body mb-3\">
-            Dans ce portfolio, vous trouverez des informations sur mes compétences, mes projets réalisés pendant ma formation, et mes objectifs professionnels. Ce site est également un moyen pour moi de pratiquer mes compétences en développement web et de mettre en œuvre des bonnes pratiques dans la création de sites modernes et fonctionnels.
+            ";
+        // line 78
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("portfolio_objectif"), "html", null, true);
+        yield "
         </p>
+        
+        <a class=\"link\" href=\"";
+        // line 81
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page2");
+        yield "\">";
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("en_savoir_plus"), "html", null, true);
+        yield "</a>
     </section>
 </div>
 
@@ -198,14 +236,14 @@ class __TwigTemplate_79bb1dec90c6d4ffa3f507bab595d58a extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
+        return array (  201 => 81,  195 => 78,  189 => 75,  184 => 73,  176 => 68,  172 => 67,  168 => 66,  164 => 65,  159 => 63,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
     }
 
     public function getSourceContext(): Source
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Acceuil{% endblock %}
+{% block title %}{{ 'accueil'|trans }}{% endblock %}
 
 {% block body %}
 <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
@@ -241,44 +279,53 @@ class __TwigTemplate_79bb1dec90c6d4ffa3f507bab595d58a extends Template
   .section {
     margin-top: 50px;
   }
-
-  /* Amélioration de la section À propos */
   .about-section {
-    background-color: #f8f9fc; /* Fond clair pour améliorer la lisibilité */
+    background-color: #f8f9fc;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   .about-section p {
     font-size: 1.125rem;
-    color: #4e4e4e; /* Texte plus sombre pour une meilleure lisibilité */
+    color: #4e4e4e;
     line-height: 1.6;
   }
   .about-section p strong {
-    color: #333; /* Accentuation des mots-clés */
+    color: #333;
   }
   .about-section h2 {
-    color: #1cc88a; /* Titre de la section avec une couleur plus vive */
+    color: #1cc88a;
+  }
+  .link {
+    align: center;
+    color: #c81c1c;
   }
 </style>
 <div class=\"container py-5\">
     <header class=\"hero-section text-center rounded-3 mb-5\">
-        <h1>Bienvenue sur mon Portfolio</h1>
-        <p class=\"lead\">Ce site a été créé dans le cadre de la <strong>SAE 1.04</strong> de mon programme <strong>BUT Réseaux et Télécommunications</strong>. L'objectif de cette SAE est de réaliser un portfolio personnel en ligne pour mettre en avant mes compétences et projets.</p>
+        <h1>{{ 'bienvenue_portfolio'|trans }}</h1>
+        <p class=\"lead\">
+            {{ 'objectif_projet'|trans }}
+            <strong>{{ 'sae_1_04'|trans }}</strong>
+            {{ 'but_reseaux_telecommunications'|trans }}
+            {{ 'objectif_projet'|trans }}
+        </p>
     </header>
 
     <section class=\"section about-section\">
-        <h2 class=\"section-title mb-4\">À propos de la SAE 1.04</h2>
+        <h2 class=\"section-title mb-4\">{{ 'a_propos_sae_1_04'|trans }}</h2>
         <p class=\"text-body mb-3\">
-            La <strong>SAE 1.04</strong> fait partie de mon programme d'étude en <strong>BUT Réseaux et Télécommunications</strong>. L'objectif est de concevoir et de développer un site web personnel, en utilisant des technologies comme <strong>HTML</strong>, <strong>CSS</strong>, et <strong>JavaScript</strong>, pour créer un portfolio en ligne. Ce projet permet de démontrer les compétences acquises au cours de la formation et de les mettre en valeur de manière professionnelle.
+            {{ 'description_sae_1_04'|trans }}
         </p>
         <p class=\"text-body mb-3\">
-            Dans ce portfolio, vous trouverez des informations sur mes compétences, mes projets réalisés pendant ma formation, et mes objectifs professionnels. Ce site est également un moyen pour moi de pratiquer mes compétences en développement web et de mettre en œuvre des bonnes pratiques dans la création de sites modernes et fonctionnels.
+            {{ 'portfolio_objectif'|trans }}
         </p>
+        
+        <a class=\"link\" href=\"{{ path('app_page2') }}\">{{ 'en_savoir_plus'|trans }}</a>
     </section>
 </div>
 
 {% endblock %}
-", "page/accueil.html.twig", "C:\\Users\\Utilisateur\\Desktop\\Cours\\S1 RT1 2024_2025\\Cours_TD_TP\\R1.09 Introduction aux technologies Web\\TP\\TP 1\\Symfony\\NOTRE_PROJET\\templates\\page\\accueil.html.twig");
+", "page/accueil.html.twig", "C:\\Users\\Utilisateur\\Desktop\\Cours\\S1 RT1 2024_2025\\Cours_TD_TP\\R1.09 Introduction aux technologies Web (Complait)\\TP\\TP 1\\Symfony\\NOTRE_PROJET\\templates\\page\\accueil.html.twig");
     }
 }

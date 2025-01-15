@@ -1,0 +1,102 @@
+Accueil: "Domum"
+Présentation: "Praesentatio"
+Portfolio: "Portefeuille"
+CV: "CV"
+Contact: "Contactus"
+Langues: "Linguae"
+Français: "Gallica"
+English: "Anglica"
+Latin: "Latina"
+footer_text: "&copy; 2025 Hugo Sanchez Durante. Portfolio factum in parte SAE 1.04 - BUT Reticula et Telecommunicationes"
+
+# Translations in Latin
+accueil: 'Domum'
+bienvenue_portfolio: 'Bene venisti ad portfolium meum'
+sae_1_04: 'SAE 1.04'
+but_reseaux_telecommunications: 'Gradus Baccalaureatus in Retibus et Telecommunicationibus'
+objectif_projet: 'Hoc situs creatus est in parte'
+en_savoir_plus: 'Plus scire'
+
+# Section Translations
+a_propos_sae_1_04: 'De SAE 1.04'
+description_sae_1_04: |
+  "SAE 1.04 pars est studiorum meorum in programma Baccalaureatus in Retibus et Telecommunicationibus, 
+  quod spectat ad designandum et evolvendum locum interretialem personale utens technologiis ut HTML, CSS, et JavaScript 
+  ad creandum portfolium interretialem. Hoc projectum mihi permittit ostendere artes quas accepi per studia mea 
+  et eas professionali modo ostendere."
+portfolio_objectif: |
+  "In hoc portfolio, invenies informationes de artibus meis, de proiectis peractis durante studiis meis, 
+  et de scopis professionalibus meis. Hoc situs etiam occasionem praebet mihi ad exercitandum artes meas 
+  in evolutione interretiali et ad applicandum optimae praxim ad creandum locos modernos et functionales."
+
+contact: "Contactus"
+informations_contact: "Informationes Contactus"
+telephone: "Telephonium"
+adresse: "Address"
+retrouvez_moi: "Inveni me"
+
+
+
+
+# messages.la.yaml
+
+# Title
+presentation_title: "Praesentatio"
+
+# Introduction
+presentation_intro: "Salve, ego sum Hugo Sanchez Durante"
+presentation_description: >
+  Sum discipulus in BUT Reticulis et Telecommunicationibus et amore sum ad evolutionem interreti, novas technologiae, et innovationem. Haec pagina est meus portfolio, ubi ostendo meas artes, proiecta, et passiones.
+presentation_goal: >
+  Mihi placet provocationes suscipere, novas artes discere, et solutiones innovativas evolvere. Propositum meum est contribuere ad proiecta interesting quae positivum ictum habent in mundo digitali.
+
+# Timeline
+timeline_title: "Iter meum"
+timeline_2024_ongoing: "2024 - In processu: BUT Reticula et Telecommunicationes"
+timeline_lycee: "2024 - 2019: Bacalaureatus technologicus"
+timeline_college: "2019 - 2014: Collegium Jean Ferrat"
+timeline_2024_description: "Nunc studeo apud Universitatem Jean Monnet in Roanne, ubi specializor in reticulis et telecommunicationibus."
+timeline_lycee_description: "In schola secundaria, feci bacalaureatum technologicum in STI2D. In ultima anno, participavi in certamine First Tech Challenge France."
+timeline_college_description: "In schola media, participavi in diari scholae per 2 annos et studui Latine per 3 annos."
+
+# Hobbies
+hobbies_title: "Hobbies mei"
+hobbies_description: "Praeter studia, amorem temporis mei ad hobbies meos impendo. Passionatus sum:"
+hobbies_video_games: "Ludi video: Ludi strategiam realem tempore, sicut Starcraft II."
+hobbies_reading: "Lectio: Legere libros fabulosos."
+
+# Button
+contact_button: "Contacter me"
+
+
+
+
+
+
+
+
+cv_title: "CV de Hugo Sanchez Durante"
+cv_description: "Discipulus in Reticulis et Telecommunicationibus | Amator Technologiae et Innovationis"
+dream_job_title: "Titulus operis somnii mei: Procurator Reticulorum et Telecommunicationum"
+formations_title: "Formations"
+formations:
+  - "Schola XYZ - Diplomatum Finis Studiis (2020)"
+  - "Baccalaureatus Scientificus - Schola ABC (2022)"
+  - "B.U.T. Reticula et Telecommunicationes - Universitas XYZ (2023-Praesens)"
+experiences_title: "Experientiae Professionales"
+experiences:
+  - "Internus in Administratione Reticulorum - Societas XYZ (Iulius 2024 - Augustus 2024)"
+  - "Auxiliarius Technicus in Telecommunicationibus - Societas ABC (Iunius 2023 - Augustus 2023)"
+competences_title: "Peritiae"
+competences:
+  - "Administratio reticulorum, gestio IP, rursus"
+  - "Cyberscurity, administratio ignis murorum, analysi periculi"
+  - "Doctrina in instrumentis ut Wireshark, GNS3, et VMware"
+  - "Programmatio cum Python, Bash, et Shell Script"
+download_cv: "Download ut PDF"
+form_title: "Formularium ut CV Download"
+form_name: "Nomen"
+form_email: "Email"
+form_message: "Nuntius"
+form_generate_pdf: "Generare PDF"
+form_close: "Claudere"

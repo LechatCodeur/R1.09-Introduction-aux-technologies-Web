@@ -1,80 +1,94 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
-        
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Accueil!{% endblock %}</title>
         <link rel="stylesheet" href="{{ asset('Style/bootstrap.min.css') }}">
 
-         <style>
+        <style>
             html, body {
-              background: linear-gradient(90deg, #0055A4 33%, #FFFFFF 33% 66%, #EF4135 66%);
-              height: 100%;
-              margin: 0;
-              display: flex;
-              flex-direction: column;
-              } 
-              .content {
-              flex: 1;
-              }
-              footer {
-        background-color: #343a40;
-        color: white; 
-        text-align: center;
-        padding: 15px 0; 
-        margin-top: auto;
-        width: 100%;
-    }
-    @media (max-width: 576px) {
-        footer p {
-            font-size: 0.9rem;
-        }
-    }
-            
-         </style>
-        {% block stylesheets %}{% endblock %}
+                background: linear-gradient(90deg, #0055A4 33%, #FFFFFF 33% 66%, #EF4135 66%);
+                height: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+            }
 
+            .content {
+                flex: 1;
+            }
+
+            footer {
+                background-color: #343a40;
+                color: white;
+                text-align: center;
+                padding: 15px 0;
+                width: 100%;
+            }
+
+            @media (max-width: 576px) {
+                footer p {
+                    font-size: 0.9rem;
+                }
+            }
+            #lang-button {
+             display: inline-block;
+             visibility: visible;
+            }
+
+        </style>
+
+        {% block stylesheets %}{% endblock %}
         {% block javascripts %}
             {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
     </head>
     <body>
-        
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="{{ path('app_page1') }}">
-                <img src="{{ asset('images/logo.png') }}" alt="Logo" width="160px" height="80px">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarColor02">
-                <ul class="navbar-nav me-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="{{ path('app_page1') }}">Accueil</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="{{ path('app_page2') }}">Présentation</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="{{ path('app_page3') }}">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="{{ path('app_page4') }}">Contact</a>
-                  </li>
-                </ul>
-              </div>
+                <a class="navbar-brand" href="{{ path('app_page1') }}">
+                    <img src="{{ asset('images/logo.png') }}" alt="Logo" width="160px" height="80px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_page1') }}">{% trans %}Accueil{% endtrans %}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_page2') }}">{% trans %}Présentation{% endtrans %}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_page3') }}">{% trans %}Portfolio{% endtrans %}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_page5') }}">{% trans %}CV{% endtrans %}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="{{ path('app_page4') }}">{% trans %}Contact{% endtrans %}</a>
+                        </li>
+                    </ul>
+
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link" href="{{ path(app.request.attributes.get('_route'), {'_locale': 'fr'}) }}">{% trans %}Français{% endtrans %}</a>
+                        <a class="nav-link" href="{{ path(app.request.attributes.get('_route'), {'_locale': 'en'}) }}">{% trans %}English{% endtrans %}</a>
+                        <a class="nav-link" href="{{ path(app.request.attributes.get('_route'), {'_locale': 'la'}) }}">{% trans %}Latin{% endtrans %}</a>
+                    </div>
+                    
+                    
+                </div>
             </div>
         </nav>
-        
-        {% block body %}
-        
-        
-        {% endblock %}
-        
+
+        <div class="content">
+            {% block body %}{% endblock %}
+        </div>
+
+        <footer>
+            <p>{% trans %}&copy; 2025 Hugo Sanchez Durante. Portfolio réalisé dans le cadre de la SAE 1.04 - BUT Réseaux et Télécommunications{% endtrans %}</p>
+        </footer>
     </body>
-    <footer>
-      <p>&copy; 2025 Hugo Sanchez Durante. Portfolio réalisé dans le cadre de la SAE 1.04 - BUT Réseaux et Télécommunications</p>
-  </footer>
 </html>
+

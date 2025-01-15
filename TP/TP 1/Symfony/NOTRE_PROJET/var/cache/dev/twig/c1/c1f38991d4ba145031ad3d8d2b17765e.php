@@ -73,7 +73,7 @@ class __TwigTemplate_f888ba043c2b42eb72e84901c5eccf21 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        yield "Acceuil";
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("accueil"), "html", null, true);
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -126,15 +126,31 @@ class __TwigTemplate_f888ba043c2b42eb72e84901c5eccf21 extends Template
 <div class=\"container py-5\">
     <div class=\"row justify-content-center\">
         <div class=\"col-md-8\">
-            <h1 class=\"mb-4 text-center\">Contactez-nous</h1>
+            <h1 class=\"mb-4 text-center\">";
+        // line 35
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("contact"), "html", null, true);
+        yield "</h1>
 
             <!-- Informations de contact -->
             <div class=\"card shadow-sm\">
                 <div class=\"card-body\">
-                    <h4>Informations de Contact</h4>
+                    <h4>";
+        // line 40
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("informations_contact"), "html", null, true);
+        yield "</h4>
                     <ul class=\"list-unstyled\">
-                        <li><img src=\"Images/tel.png\" alt=\"Téléphone\" widht=\"40px\" height=\"30px\" class=\"me-2\" /> <strong>Téléphone:</strong> +33 6 77 64 23 74</li>
-                        <li><img src=\"Images/house.png\" alt=\"addresse\" widht=\"40px\" height=\"40px\" class=\"me-2\" /> <strong>Adresse:</strong> 9 Rue Louis Pergaud, Salaise-Sur-Sanne, France</li>
+                        <li><img src=\"Images/tel.png\" alt=\"";
+        // line 42
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("telephone"), "html", null, true);
+        yield "\" width=\"40px\" height=\"30px\" class=\"me-2\" /> <strong>";
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("telephone"), "html", null, true);
+        yield ":</strong> +33 6 77 64 23 74</li>
+                        <li><img src=\"Images/house.png\" alt=\"";
+        // line 43
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("adresse"), "html", null, true);
+        yield "\" width=\"40px\" height=\"40px\" class=\"me-2\" /> <strong>";
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("adresse"), "html", null, true);
+        yield ":</strong> 9 Rue Louis Pergaud, Salaise-Sur-Sanne, France</li>
                     </ul>
                 </div>
             </div>
@@ -143,7 +159,10 @@ class __TwigTemplate_f888ba043c2b42eb72e84901c5eccf21 extends Template
 
             <!-- Réseaux sociaux -->
             <div class=\"text-center\">
-                <h4>Retrouvez-moi</h4>
+                <h4>";
+        // line 52
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("retrouvez_moi"), "html", null, true);
+        yield "</h4>
                 <div class=\"d-flex justify-content-center\">
                     <a href=\"https://github.com/LechatCodeur\" class=\"social-btn me-2\" target=\"_blank\">
                         <img src=\"Images/github.png\" alt=\"GitHub\" class=\"social-icon\" />
@@ -194,14 +213,14 @@ class __TwigTemplate_f888ba043c2b42eb72e84901c5eccf21 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
+        return array (  164 => 52,  150 => 43,  144 => 42,  139 => 40,  131 => 35,  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
     }
 
     public function getSourceContext(): Source
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Acceuil{% endblock %}
+{% block title %}{{ 'accueil'|trans }}{% endblock %}
 
 {% block body %}
 <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
@@ -233,15 +252,15 @@ class __TwigTemplate_f888ba043c2b42eb72e84901c5eccf21 extends Template
 <div class=\"container py-5\">
     <div class=\"row justify-content-center\">
         <div class=\"col-md-8\">
-            <h1 class=\"mb-4 text-center\">Contactez-nous</h1>
+            <h1 class=\"mb-4 text-center\">{{ 'contact'|trans }}</h1>
 
             <!-- Informations de contact -->
             <div class=\"card shadow-sm\">
                 <div class=\"card-body\">
-                    <h4>Informations de Contact</h4>
+                    <h4>{{ 'informations_contact'|trans }}</h4>
                     <ul class=\"list-unstyled\">
-                        <li><img src=\"Images/tel.png\" alt=\"Téléphone\" widht=\"40px\" height=\"30px\" class=\"me-2\" /> <strong>Téléphone:</strong> +33 6 77 64 23 74</li>
-                        <li><img src=\"Images/house.png\" alt=\"addresse\" widht=\"40px\" height=\"40px\" class=\"me-2\" /> <strong>Adresse:</strong> 9 Rue Louis Pergaud, Salaise-Sur-Sanne, France</li>
+                        <li><img src=\"Images/tel.png\" alt=\"{{ 'telephone'|trans }}\" width=\"40px\" height=\"30px\" class=\"me-2\" /> <strong>{{ 'telephone'|trans }}:</strong> +33 6 77 64 23 74</li>
+                        <li><img src=\"Images/house.png\" alt=\"{{ 'adresse'|trans }}\" width=\"40px\" height=\"40px\" class=\"me-2\" /> <strong>{{ 'adresse'|trans }}:</strong> 9 Rue Louis Pergaud, Salaise-Sur-Sanne, France</li>
                     </ul>
                 </div>
             </div>
@@ -250,7 +269,7 @@ class __TwigTemplate_f888ba043c2b42eb72e84901c5eccf21 extends Template
 
             <!-- Réseaux sociaux -->
             <div class=\"text-center\">
-                <h4>Retrouvez-moi</h4>
+                <h4>{{ 'retrouvez_moi'|trans }}</h4>
                 <div class=\"d-flex justify-content-center\">
                     <a href=\"https://github.com/LechatCodeur\" class=\"social-btn me-2\" target=\"_blank\">
                         <img src=\"Images/github.png\" alt=\"GitHub\" class=\"social-icon\" />
@@ -271,6 +290,6 @@ class __TwigTemplate_f888ba043c2b42eb72e84901c5eccf21 extends Template
 </div>
 
 {% endblock %}
-", "page/contact.html.twig", "C:\\Users\\Utilisateur\\Desktop\\Cours\\S1 RT1 2024_2025\\Cours_TD_TP\\R1.09 Introduction aux technologies Web\\TP\\TP 1\\Symfony\\NOTRE_PROJET\\templates\\page\\contact.html.twig");
+", "page/contact.html.twig", "C:\\Users\\Utilisateur\\Desktop\\Cours\\S1 RT1 2024_2025\\Cours_TD_TP\\R1.09 Introduction aux technologies Web (Complait)\\TP\\TP 1\\Symfony\\NOTRE_PROJET\\templates\\page\\contact.html.twig");
     }
 }

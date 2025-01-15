@@ -1,6 +1,8 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Présentation{% endblock %}
+{% block title %}
+    {{ 'presentation_title'|trans }}
+{% endblock %}
 
 {% block body %}
 <style>
@@ -8,16 +10,13 @@
         height: 100%;
         margin: 0;
     }
-
     .container {
         width: 100%;
         padding: 0 20px;
     }
-
     h1, h2 {
         color: #333;
     }
-
     /* Section de présentation */
     .presentation {
         background: #fff;
@@ -223,63 +222,55 @@
     .container {
         min-height: 80%;
     }
-
 </style>
-
 
 <div class="container">
 
     <!-- Section de présentation -->
     <div class="presentation">
-        <h2>Bonjour, je suis Hugo Sanchez Durante</h2>
-        <p>
-            Je suis étudiant(e) en <strong>BUT Réseaux et Télécommunications</strong> et passionné(e) par le développement web, les nouvelles technologies, et l'innovation. Ce site est mon portfolio, où je mets en avant mes compétences, mes projets et mes passions.
-        </p>
-        <p>
-            J'aime relever des défis, apprendre de nouvelles compétences et développer des solutions innovantes. Mon objectif est de contribuer à des projets intéressants qui ont un impact positif dans le monde numérique.
-        </p>
+        <h2>{{ 'presentation_intro'|trans }}</h2>
+        <p>{{ 'presentation_description'|trans }}</p>
+        <p>{{ 'presentation_goal'|trans }}</p>
     </div>
 
     <!-- Timeline -->
     <div class="timeline">
-        <h2>Mon parcours</h2>
+        <h2>{{ 'timeline_title'|trans }}</h2>
         <div class="timeline-container">
             <div class="timeline-item top">
                 <div class="timeline-point">
                     <div class="timeline-text">
-                        Actuellement en formation au sein de l'Université de Jean Monnet à Roanne, je me spécialise dans les réseaux et les télécommunications.
+                        {{ 'timeline_2024_description'|trans }}
                     </div>
                 </div>
-                <h3>2024 - En cours : BUT Réseaux et Télécommunications</h3>
+                <h3>{{ 'timeline_2024_ongoing'|trans }}</h3>
             </div>
             <div class="timeline-item bottom">
                 <div class="timeline-point">
                     <div class="timeline-text">
-                        Au lycée, j'ai fait un bac technologique STI2D. Dans ma dernière année, j'ai participé à la compétition First Tech Challenge France.
+                        {{ 'timeline_lycee_description'|trans }}
                     </div>
                 </div>
-                <h3>2024 - 2019 : Baccalauréat technologique</h3>
+                <h3>{{ 'timeline_lycee'|trans }}</h3>
             </div>
             <div class="timeline-item top">
                 <div class="timeline-point">
                     <div class="timeline-text">
-                        Au collège j'ai participé au club journal pendant 2 ans et j'ai fait l'option latin pendant 3 ans.
+                        {{ 'timeline_college_description'|trans }}
                     </div>
                 </div>
-                <h3>2019 - 2014: Collège Jean Ferrat</h3>
+                <h3>{{ 'timeline_college'|trans }}</h3>
             </div>
         </div>
     </div>
 
     <!-- Section loisirs -->
     <div class="loisirs">
-        <h2>Mes loisirs</h2>
-        <p>
-            En dehors de mes études, j'aime consacrer du temps à mes loisirs. Je suis passionné(e) par :
-        </p>
+        <h2>{{ 'hobbies_title'|trans }}</h2>
+        <p>{{ 'hobbies_description'|trans }}</p>
         <ul style="text-align: left; font-size: 1.2rem;">
-            <li><strong>Les jeux vidéo :</strong> Jeux de statègie en temps réels comme Starcraft II.</li>
-            <li><strong>La lecture:</strong> Lire des romans.</li>
+            <li><strong>{{ 'hobbies_video_games'|trans }}</strong></li>
+            <li><strong>{{ 'hobbies_reading'|trans }}</strong></li>
         </ul>
     </div>
 </div>

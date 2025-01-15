@@ -4,55 +4,116 @@
 
 {% block body %}
 <style>
-  html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
 #excel-display {
-    flex-grow: 1; /* Allow the iframe container to take up available space */
-    width: 100%;
-    height: calc(100vh - [footer_height]); /* Subtract footer height */
-}
-
-footer {
-    height: [footer_height]; /* Set the footer height explicitly */
-    /* Example: height: 50px; */
+  flex-grow: 1;
+  width: 100%;
+  height: calc(100vh - 50px); /* Subtract footer height */
+  overflow: auto; /* Permet de faire défiler le contenu */
 }
 
 iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-.progress-container {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1; /* Make the container take up the remaining space */
-    justify-content: space-evenly; /* Evenly distribute the space */
-    padding: 20px;
-    gap: 20px; /* Add space between the bars */
-}
-
-.progress {
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-.progress-bar {
-    height: 50px; /* Adjust the height of each progress bar */
-    border-radius: 25px; /* Optional: Add rounded corners to the progress bars */
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 h5 {
-    text-align: center; /* Center the titles */
-    margin: 0;
-    font-size: 1.2rem; /* Adjust font size */
-    font-weight: bold;
-    padding-bottom: 10px;
+  text-align: center;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+#btnradioNothing:checked ~ #excel-display #circle-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50%;
+}
+
+#circle-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 150px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+svg {
+  transform: rotate(-90deg); /* Pour commencer à dessiner du haut */
+  width: 100%;
+  height: 100%;
+}
+
+.circle-outer {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  fill: none;
+  stroke: #007bff;
+  stroke-width: 20;
+}
+
+.circle-wrapper {
+  width: calc(33.333% - 150px);
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  transition: transform 0.3s ease-in-out; /* Transition pour l'agrandissement */
+  overflow: hidden; /* Empêcher l'image de déborder */
+}
+
+.circle-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrer le contenu dans le cercle */
+  text-align: center;
+}
+
+.circle-content img {
+  max-width: 80%; /* Limite l'image à 80% du diamètre du cercle */
+  max-height: 80%; /* Limite également la hauteur de l'image à 80% */
+  object-fit: contain; /* L'image conserve ses proportions sans dépasser */
+  border-radius: 50%; /* Crée un cercle avec l'image */
+}
+
+.circle-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 20px;
+}
+
+/* Texte supplémentaire qui apparaîtra lors du survol */
+.additional-text {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  text-align: center;
+  width: 150%;
+  padding: 10px;
+  white-space: normal; /* Permet d'afficher le texte en plusieurs lignes si nécessaire */
+  z-index: 10; /* Met le texte au-dessus de l'image */
+}
+
+/* Affichage du texte supplémentaire lors du survol */
+.circle-wrapper:hover .additional-text {
+  opacity: 1; /* Affiche le texte lors du survol */
+}
+
+.circle-wrapper:hover .circle-content img {
+  transform: scale(0.9); /* Réduit l'image lorsque le cercle grandit */
 }
 
 </style>
@@ -87,107 +148,137 @@ h5 {
   <label class="btn btn-outline-primary" for="btnradio7">RT3/S2</label>
 </div>
 
-<!-- Zone d'affichage des barres de progression (Présentation) -->
-<div class="progress-container" id="progress-container">
-  <div>
-    <h5>Progression 1</h5>
-    <div class="progress">
-      <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-  </div>
-  <div>
-    <h5>Progression 2</h5>
-    <div class="progress">
-      <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-  </div>
-  <div>
-    <h5>Progression 3</h5>
-    <div class="progress">
-      <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-  </div>
-  <div>
-    <h5>Progression 4</h5>
-    <div class="progress">
-      <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-  </div>
-  <div>
-    <h5>Progression 5</h5>
-    <div class="progress">
-      <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-  </div>
-  <div>
-    <h5>Progression 6</h5>
-    <div class="progress">
-      <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-  </div>
-  <div>
-    <h5>Progression 7</h5>
-    <div class="progress">
-      <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-  </div>
-  <div>
-    <h5>Progression 8</h5>
-    <div class="progress">
-      <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-  </div>
-</div>
-
 <!-- Zone d'affichage des fichiers Excel -->
 <div id="excel-display">
   <!-- L'iframe est initialement vide ou cachée -->
   <iframe src="" width="100%" height="1000px" id="excel-iframe" style="display: none;"></iframe>
-</div>
+
+  <div id="circle-container" class="circle-container" style="display: none;">
+    <!-- Cercle 1 -->
+    <div class="circle-wrapper">
+      <svg width="100" height="100" viewBox="0 0 200 200">
+        <circle class="circle-outer" cx="100" cy="100" r="80" stroke-dasharray="500" stroke-dashoffset="125"></circle>
+      </svg>
+      <div class="circle-content">
+        <img src="/Images/VS.jpg" alt="Image">
+        <div class="circle-text">Taux : 25%</div>
+        <div class="additional-text">
+          Je suis capable de créer des programmes simples en C et Python. 
+          J'ai notamment travaillé sur des projets tels que la gestion de fonctions, la manipulation de tableaux, ainsi que l'implémentation d'algorithmes de tri.
+        </div>
+      </div>
+    </div>
+  
+    <!-- Cercle 2 -->
+    <div class="circle-wrapper">
+      <svg width="100" height="100" viewBox="0 0 200 200">
+        <circle class="circle-outer" cx="100" cy="100" r="80" stroke-dasharray="500" stroke-dashoffset="250"></circle>
+      </svg>
+      <div class="circle-content">
+        <img src="/Images/html.png" alt="Image">
+        <div class="circle-text">Taux : 50%</div>
+        <div class="additional-text">Cercle 2 - Détails supplémentaires ici</div>
+      </div>
+    </div>
+  
+    <!-- Cercle 3 -->
+    <div class="circle-wrapper">
+      <svg width="100" height="100" viewBox="0 0 200 200">
+        <circle class="circle-outer" cx="100" cy="100" r="80" stroke-dasharray="500" stroke-dashoffset="375"></circle>
+      </svg>
+      <div class="circle-content">
+        <img src="/Images/Symfony.png" alt="Image">
+        <div class="circle-text">Taux : 75%</div>
+        <div class="additional-text">Cercle 3 - Détails supplémentaires ici</div>
+      </div>
+    </div>
+  
+    <!-- Cercle 4 -->
+    <div class="circle-wrapper">
+      <svg width="100" height="100" viewBox="0 0 200 200">
+        <circle class="circle-outer" cx="100" cy="100" r="80" stroke-dasharray="500" stroke-dashoffset="0"></circle>
+      </svg>
+      <div class="circle-content">
+        <img src="https://via.placeholder.com/50" alt="Image">
+        <div class="circle-text">Taux : 100%</div>
+        <div class="additional-text">Cercle 4 - Détails supplémentaires ici</div>
+      </div>
+    </div>
+  
+    <!-- Cercle 5 -->
+    <div class="circle-wrapper">
+      <svg width="100" height="100" viewBox="0 0 200 200">
+        <circle class="circle-outer" cx="100" cy="100" r="80" stroke-dasharray="500" stroke-dashoffset="125"></circle>
+      </svg>
+      <div class="circle-content">
+        <img src="https://via.placeholder.com/50" alt="Image">
+        <div class="circle-text">Taux : 25%</div>
+        <div class="additional-text">Cercle 5 - Détails supplémentaires ici</div>
+      </div>
+    </div>
+  
+    <!-- Cercle 6 -->
+    <div class="circle-wrapper">
+      <svg width="100" height="100" viewBox="0 0 200 200">
+        <circle class="circle-outer" cx="100" cy="100" r="80" stroke-dasharray="500" stroke-dashoffset="250"></circle>
+      </svg>
+      <div class="circle-content">
+        <img src="https://via.placeholder.com/50" alt="Image">
+        <div class="circle-text">Taux : 50%</div>
+        <div class="additional-text">Cercle 6 - Détails supplémentaires ici</div>
+      </div>
+    </div>
+  </div>
+  
 
 <!-- JavaScript pour gérer les changements de bouton radio -->
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const iframe = document.getElementById('excel-iframe');
-    const progressContainer = document.getElementById('progress-container');
+    const circleContainer = document.getElementById('circle-container');
     
+    // Changez ici les pourcentages directement dans le code
+    const percentages = [80, 50, 75, 100, 25, 50]; // Exemple de pourcentages à changer
+    const circles = document.querySelectorAll('.circle-wrapper');
+
+    circles.forEach((circle, index) => {
+      const percentage = percentages[index];
+      const circlePercentage = circle.querySelector('.circle-text');
+      const circleOuter = circle.querySelector('.circle-outer');
+      
+      // Mise à jour du texte de pourcentage
+      circlePercentage.innerHTML = 'Taux : ' + percentage + '%';
+
+      // Calculer le décalage de la bordure en fonction du pourcentage
+      const strokeDashoffset = 500 * (1 - (percentage / 100));
+      circleOuter.style.strokeDashoffset = strokeDashoffset;
+    });
+
     // Écouteur d'événements pour le changement des boutons radio
     document.querySelectorAll('input[name="btnradio"]').forEach(radio => {
       radio.addEventListener('change', function () {
-        // Si le bouton "Rien" est sélectionné, on cache l'iframe et on affiche les barres de progression
+        // Si le bouton "Rien" est sélectionné, on cache l'iframe et montre les cercles
         if (radio.id === 'btnradioNothing') {
           iframe.style.display = 'none';  // Cache l'iframe
           iframe.src = '';  // Vide le contenu de l'iframe
-          progressContainer.style.display = 'block'; // Affiche les barres de progression
+          circleContainer.style.display = 'flex';  // Affiche les cercles
         } else {
-          progressContainer.style.display = 'none'; // Cache les barres de progression
           iframe.style.display = 'block'; // Affiche l'iframe
+          circleContainer.style.display = 'none'; // Cache les cercles
           
           // En fonction du bouton sélectionné, on met à jour l'iframe
           if (radio.id === 'btnradio2') {
             iframe.src = "https://docs.google.com/spreadsheets/d/1F7H-plknB4YsNLRgMopjwkmjrCdHbkcNLFJrQFoMbW4/edit?gid=1855953082#gid=1855953082"; 
-            iframe.width = "100%";
-            iframe.height = "1000";
           } else if (radio.id === 'btnradio3') {
             iframe.src = "https://docs.google.com/spreadsheets/d/1qKpuegvfNUg6fcPG7Oy11UoUvwpVj2XTwtHyUZhUn-E/edit?gid=839854339#gid=839854339"; 
-            iframe.width = "100%"; 
-            iframe.height = "1000";
           } else if (radio.id === 'btnradio4') {
             iframe.src = "https://docs.google.com/spreadsheets/d/1ZdLV1ri1_kleUEuocoA9tXQY9MrwIAdsULnHH82jAZo/edit?gid=950138144#gid=950138144"; 
-            iframe.width = "100%";
-            iframe.height = "1000";
           } else if (radio.id === 'btnradio5') {
             iframe.src = "https://docs.google.com/spreadsheets/d/18SVFn6QqukcF3lAKJx3seFBLkRjWqW23FSQl7dIv2vg/edit?gid=436640704#gid=436640704"; 
-            iframe.width = "100%"; 
-            iframe.height = "1000";
           } else if (radio.id === 'btnradio6') {
             iframe.src = "https://docs.google.com/spreadsheets/d/1fEXeeSLOkNZGP6erv5eQr0swqJoYxGOrb7N40QK20x0/edit?gid=1770696550#gid=1770696550"; 
-            iframe.width = "100%"; 
-            iframe.height = "1000";
           } else if (radio.id === 'btnradio7') {
             iframe.src = "https://docs.google.com/spreadsheets/d/1huByWpbRDLjIdHTadRLNR-r-NS_gNr-te9_tGEQzsdc/edit?gid=524815677#gid=524815677"; 
-            iframe.width = "100%"; 
-            iframe.height = "1000";
           }
         }
       });

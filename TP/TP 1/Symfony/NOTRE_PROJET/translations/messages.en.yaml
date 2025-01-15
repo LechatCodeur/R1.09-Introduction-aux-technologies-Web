@@ -1,0 +1,102 @@
+Accueil: "Home"
+Présentation: "Presentation"
+Portfolio: "Portfolio"
+CV: "CV"
+Contact: "Contact"
+Langues: "Languages"
+Français: "French"
+English: "English"
+Latin: "Latin"
+footer_text: "&copy; 2025 Hugo Sanchez Durante. Portfolio created as part of the SAE 1.04 - BUT Networks and Telecommunications"
+
+# Translations in English
+accueil: 'Home'
+bienvenue_portfolio: 'Welcome to my portfolio'
+sae_1_04: 'SAE 1.04'
+but_reseaux_telecommunications: "Bachelor's degree in Networks and Telecommunications"
+objectif_projet: 'This website was created as part of the'
+en_savoir_plus: 'Learn more'
+
+# Section Translations
+a_propos_sae_1_04: 'About SAE 1.04'
+description_sae_1_04: |
+  "SAE 1.04 is part of my studies in the Bachelor's degree program in Networks and Telecommunications, 
+  which aims to design and develop a personal website using technologies such as HTML, CSS, and JavaScript 
+  to create an online portfolio. This project allows me to demonstrate the skills I have gained during my studies 
+  and showcase them professionally."
+portfolio_objectif: |
+  "In this portfolio, you will find information about my skills, the projects completed during my studies, 
+  and my professional goals. This site also provides an opportunity for me to practice my web development skills 
+  and apply best practices to create modern and functional websites."
+
+
+contact: "Contact Us"
+informations_contact: "Contact Information"
+telephone: "Phone"
+adresse: "Address"
+retrouvez_moi: "Find Me"
+
+
+
+
+
+
+# messages.en.yaml
+
+# Title
+presentation_title: "Presentation"
+
+# Introduction
+presentation_intro: "Hello, I am Hugo Sanchez Durante"
+presentation_description: >
+  I am a student in BUT Networks and Telecommunications  and passionate about web development, new technologies, and innovation. This site is my portfolio, where I showcase my skills, projects, and passions.
+presentation_goal: >
+  I love taking on challenges, learning new skills, and developing innovative solutions. My goal is to contribute to interesting projects that have a positive impact in the digital world.
+
+# Timeline
+timeline_title: "My journey"
+timeline_2024_ongoing: "2024 - Ongoing: BUT Networks and Telecommunications"
+timeline_lycee: "2024 - 2019: Technological Baccalaureate"
+timeline_college: "2019 - 2014: Jean Ferrat Middle School"
+timeline_2024_description: "Currently studying at Jean Monnet University in Roanne, I specialize in networks and telecommunications."
+timeline_lycee_description: "In high school, I took a technological baccalaureate in STI2D. In my last year, I participated in the First Tech Challenge France competition."
+timeline_college_description: "In middle school, I participated in the school newspaper for 2 years and studied Latin for 3 years."
+
+# Hobbies
+hobbies_title: "My hobbies"
+hobbies_description: "Outside of my studies, I enjoy spending time on my hobbies. I am passionate about:"
+hobbies_video_games: "Video games: Real-time strategy games like Starcraft II."
+hobbies_reading: "Reading: I enjoy reading novels."
+
+# Button
+contact_button: "Contact me"
+
+
+
+
+
+cv_title: "CV of Hugo Sanchez Durante"
+cv_description: "Student in Networks and Telecommunications | Passionate about Technology and Innovation"
+dream_job_title: "The job title of my dreams: Network and Telecommunications Manager"
+formations_title: "Education"
+formations:
+  - "XYZ High School - Graduation Degree (2020)"
+  - "Scientific Baccalaureate - ABC High School (2022)"
+  - "B.U.T. Networks and Telecommunications - XYZ University (2023-Present)"
+experiences_title: "Work Experience"
+experiences:
+  - "Network Administration Intern - XYZ Company (July 2024 - August 2024)"
+  - "Telecommunications Technical Assistant - ABC Company (June 2023 - August 2023)"
+competences_title: "Skills"
+competences:
+  - "Network administration, IP management, routing"
+  - "Cybersecurity, firewall management, risk analysis"
+  - "Proficient in tools such as Wireshark, GNS3, and VMware"
+  - "Programming with Python, Bash, and Shell Script"
+download_cv: "Download as PDF"
+form_title: "Form to Download CV"
+form_name: "Name"
+form_email: "Email"
+form_message: "Message"
+form_generate_pdf: "Generate PDF"
+form_close: "Close"
